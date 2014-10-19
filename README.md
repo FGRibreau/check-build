@@ -4,14 +4,15 @@
 
 **Check-build** verify that your NodeJS project follow team conventions, is well written and secure.
 
-[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build)
-[![Version](http://badge.fury.io/js/check-build.png)](https://david-dm.org/FGRibreau/check-build)
 
 > “Each time I start a new project/mvp/poc/module I don't want to create/edit a new make/grunt/gulp file or whatever hype dev use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
 > Let's build that once and for all.”
 > 
 > – 10/19/2014
+
+[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build)
+[![Version](http://badge.fury.io/js/check-build.png)](https://david-dm.org/FGRibreau/check-build)
 
 # Usage
 
