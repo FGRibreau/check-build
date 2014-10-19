@@ -4,7 +4,6 @@
 
 **Check-build** verify that your NodeJS project follow team conventions, is well written and secure.
 
-[![Build Status](https://secure.travis-ci.org/FGRibreau/check-build.png)](http://travis-ci.org/FGRibreau/check-build)
 [![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build)
 [![Version](http://badge.fury.io/js/check-build.png)](https://david-dm.org/FGRibreau/check-build)
 
