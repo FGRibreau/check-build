@@ -1,9 +1,8 @@
-Check-build
-===========
+**Check-build** verify that your NodeJS project follow team conventions, is well written and secure.
 
-Check that your NodeJS project follow conventions, is well written and secure.
+-----------------------
 
-A NodeJS project can be automatically analyzed on many dimension like consistency, security. The goal of this project is to make the human out of the loop.
+A NodeJS project can be automatically analyzed on many dimension like code-consistency, d-r-y-ness and security. The final goal of this project is to make the human out of the loop in these dimensions.
 
 > “Each time I start a new project/mvp/poc/module I don't want to edit a grunt/gulp file or whatever kids use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
