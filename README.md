@@ -25,13 +25,13 @@ echo $?
 
 ### Code error and potential problem detection
 
-- [JSHint](https://github.com/jshint/jshint) Static analysis tool for JavaScript (using [JSHint stylish](https://github.com/sindresorhus/jshint-stylish)). If `.jshintrc` is not present in project root, check-build will use this `[.jshintrc](./defaults/.jshintrc)`.
+- [JSHint](https://github.com/jshint/jshint) Static analysis tool for JavaScript (using [JSHint stylish](https://github.com/sindresorhus/jshint-stylish)). If `.jshintrc` is not present in project root, check-build will use this [.jshintrc](./defaults/.jshintrc).
 
 *[To be implemented]*: [FixMyJS](https://github.com/jshint/fixmyjs) Automatically fix silly lint errors.
 
 ### Code style checking
 
-- [JSCS](https://github.com/jscs-dev/node-jscs) Check the code style of your code. If `.jscsrc` is not present in project root, check-build will use this `[.jscsrc](./defaults/.jscsrc)`.
+- [JSCS](https://github.com/jscs-dev/node-jscs) Check the code style of your code. If `.jscsrc` is not present in project root, check-build will use this [.jscsrc](./defaults/.jscsrc).
 
 ### D.R.Y
 
