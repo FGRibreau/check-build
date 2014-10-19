@@ -1,8 +1,6 @@
 **Check-build** verify that your NodeJS project follow team conventions, is well written and secure.
 
------------------------
-
-> “Each time I start a new project/mvp/poc/module I don't want to edit a grunt/gulp file or whatever kids use these days.
+> “Each time I start a new project/mvp/poc/module I don't want to create/edit a new grunt/gulp file or whatever kids use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
 > Let's build that once and for all.”
 > 
@@ -16,13 +14,13 @@ A NodeJS project can be automatically analyzed in many dimension like code-consi
 npm install check-build -g
 cd /path/to/your/project
 check-build
-# will display sub-module output
+# [...] (sub-module output)
 echo $?
 # 0 if everything went right, 1 otherwise.
 ```
 
 <p align="center">
-<img src="http://media.giphy.com/media/L9pjsBKjNKrXa/giphy.gif"/>
+<img src="https://dl.dropboxusercontent.com/u/3892/gif/building-house.gif"/>
 </p>
 
 # What's inside 
@@ -46,6 +44,9 @@ echo $?
 
 - [Nsp](https://github.com/nodesecurity/nsp) Check your project dependencies for security issues.
 
+<p align="center">
+<img src="https://dl.dropboxusercontent.com/u/3892/gif/mindblown2.gif"/>
+</p>
 
 # Philosophy
 
