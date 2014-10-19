@@ -15,15 +15,17 @@ The final goal of **check-build** is to make the human out of the loop.
 # Usage
 
 ```shell
-$ npm install check-build -g
-$ cd /path/to/your/project
-$ check-build
-# will display some output
-$ echo $?
+npm install check-build -g
+cd /path/to/your/project
+check-build
+# will display sub-module output
+echo $?
 # 0 if everything went right, 1 otherwise.
 ```
 
-!(build)[http://media.giphy.com/media/L9pjsBKjNKrXa/giphy.gif]
+<p align="center">
+<img src="http://media.giphy.com/media/L9pjsBKjNKrXa/giphy.gif"/>
+</p>
 
 # What's inside 
 
