@@ -1,6 +1,6 @@
 **Check-build** verify that your NodeJS project follow team conventions, is well written and secure.
 
-> “Each time I start a new project/mvp/poc/module I don't want to create/edit a new grunt/gulp file or whatever kids use these days.
+> “Each time I start a new project/mvp/poc/module I don't want to create/edit a new make/grunt/gulp file or whatever hype dev use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
 > Let's build that once and for all.”
 > 
