@@ -6,7 +6,9 @@
 > 
 > – 10/19/2014
 
-A NodeJS project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build final goal is to make the human out of the loop.
+<p align="center">
+<img src="https://dl.dropboxusercontent.com/u/3892/gif/building-house.gif"/>
+</p>
 
 # Usage
 
@@ -18,10 +20,6 @@ check-build
 echo $?
 # 0 if everything went right, 1 otherwise.
 ```
-
-<p align="center">
-<img src="https://dl.dropboxusercontent.com/u/3892/gif/building-house.gif"/>
-</p>
 
 # What's inside 
 
@@ -60,3 +58,7 @@ echo $?
 
 - Fork jsinspect to read a `.jsinspect` file
 - Fork buddyjs to read a `.buddyjs` file
+
+# Final goal
+
+A (NodeJS) project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build final goal is to make the human out of the loop.
