@@ -12,24 +12,18 @@ The final goal of **check-build** is to make the human out of the loop.
 > 
 > – 10/19/2014
 
-
 # Usage
 
 ```shell
 $ npm install check-build -g
 $ cd /path/to/your/project
 $ check-build
+# will display some output
+$ echo $?
+# 0 if everything went right, 1 otherwise.
 ```
 
-# Philosophy
-
-- Leverage simplicity over performance. `check-build` will be run automatically by a build bot. I #%£€)° don't care about performance, I want code quality and ease of use.
-- Don't reinvent the wheel, leverage each module own configuration file. E.g. `.jshintrc`.
-- Even if the underneath module is not capable of handling multiple files, abstract it.
-- Use `multimatch` everywhere.
-- `.checkbuild` is there to configure each module (if necessary), checkbuild will forward these parameters to each module implementation.
-
-
+!(build)[http://media.giphy.com/media/L9pjsBKjNKrXa/giphy.gif]
 
 # What's inside 
 
@@ -51,6 +45,15 @@ $ check-build
 ### Security
 
 - [Nsp](https://github.com/nodesecurity/nsp) Check your project dependencies for security issues.
+
+
+# Philosophy
+
+- Leverage simplicity over performance. `check-build` will be run automatically by a build bot. I #%£€)° don't care about performance, I want code quality and ease of use.
+- Don't reinvent the wheel, leverage each module own configuration file. E.g. `.jshintrc`.
+- Even if the underneath module is not capable of handling multiple files, abstract it.
+- Use `multimatch` everywhere.
+- `.checkbuild` is there to configure each module (if necessary), checkbuild will forward these parameters to each module implementation.
 
 # Todo
 
