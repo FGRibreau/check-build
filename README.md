@@ -2,7 +2,9 @@
 
 -----------------------
 
-A NodeJS project can be automatically analyzed on many dimension like code-consistency, d-r-y-ness and security. The final goal of this project is to make the human out of the loop in these dimensions.
+A NodeJS project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. 
+
+The final goal of **check-build** is to make the human out of the loop.
 
 > “Each time I start a new project/mvp/poc/module I don't want to edit a grunt/gulp file or whatever kids use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
