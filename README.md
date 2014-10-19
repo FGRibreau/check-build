@@ -25,13 +25,13 @@ echo $?
 
 ### Code error and potential problem detection
 
-- [JSHint](https://github.com/jshint/jshint) Static analysis tool for JavaScript (using [JSHint stylish](https://github.com/sindresorhus/jshint-stylish))
+- [JSHint](https://github.com/jshint/jshint) Static analysis tool for JavaScript (using [JSHint stylish](https://github.com/sindresorhus/jshint-stylish)). If `.jshintrc` is not present in project root, check-build will use this `[.jshintrc](./defaults/.jshintrc)`.
 
 *[To be implemented]*: [FixMyJS](https://github.com/jshint/fixmyjs) Automatically fix silly lint errors.
 
 ### Code style checking
 
-- [JSCS](https://github.com/jscs-dev/node-jscs) Check the code style of your code.
+- [JSCS](https://github.com/jscs-dev/node-jscs) Check the code style of your code. If `.jscsrc` is not present in project root, check-build will use this `[.jscsrc](./defaults/.jscsrc)`.
 
 ### D.R.Y
 
@@ -53,6 +53,43 @@ echo $?
 - Even if the underneath module is not capable of handling multiple files, abstract it.
 - Use `multimatch` everywhere.
 - `.checkbuild` is there to configure each module (if necessary), checkbuild will forward these parameters to each module implementation.
+
+# Checkbuild configuration
+
+Put a `.checkbuild` file (see [example](./defaults/.checkbuild)) in your project root directory.
+
+```json
+{
+  "checkbuild": {
+    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"]
+  },
+
+  "jshint": {
+    "args": ["src/**/*.js"]
+    // ... and so on.
+  },
+
+  "jscs": {
+    "args": ["lib/**.js"]
+    // ... and so on.
+  },
+
+  "jsinspect": {
+    "args": ["*.js"],
+    "diff": true
+    // ... and so on.
+  },
+
+  "buddyjs": {
+    "args": ["*.js"],
+    "ignore": [0, 1, 200]
+    // ... and so on.
+  },
+
+  "nsp": {}
+}
+
+```
 
 # Todo
 

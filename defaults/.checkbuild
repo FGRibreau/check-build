@@ -4,21 +4,20 @@
   },
 
   "jshint": {
-    "args": ["*.js", "lib/**.js", "src/**/*.js"],
-    "args": []
+    "args": ["src/**/*.js"],
   },
 
   "jscs": {
-    "args": ["*.js", "lib/**.js", "src/**/*.js"]
+    "args": ["lib/**.js"]
   },
 
   "jsinspect": {
-    "args": ["*.js", "lib/**.js", "src/**/*.js"],
+    "args": ["*.js"],
     "diff": true
   },
 
   "buddyjs": {
-    "args": ["*.js", "lib/**.js", "src/**/*.js"],
+    "args": ["*.js"],
     "ignore": [0, 1, 200]
   },
 
