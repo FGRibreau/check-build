@@ -26,7 +26,7 @@ $ check-build
 - Don't reinvent the wheel, leverage each module own configuration file. E.g. `.jshintrc`.
 - Even if the underneath module is not capable of handling multiple files, abstract it.
 - Use `multimatch` everywhere.
-- `.checkbuild` is simply their to configure each module (if necessary), checkbuild will simply forward these parameters to each module.
+- `.checkbuild` is there to configure each module (if necessary), checkbuild will forward these parameters to each module implementation.
 
 
 
