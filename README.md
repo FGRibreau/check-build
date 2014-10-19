@@ -7,7 +7,7 @@ A NodeJS project can be automatically analyzed on many dimension like consistenc
 
 > “Each time I start a new project/mvp/poc/module I don't want to edit a grunt/gulp file or whatever kids use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
-> Let's build that once for all.”
+> Let's build that once and for all.”
 > 
 > – 10/19/2014
 
@@ -53,6 +53,5 @@ $ check-build
 
 # Todo
 
-- Make it configurable via `.checkbuild` file
 - Fork jsinspect to read a `.jsinspect` file
 - Fork buddyjs to read a `.buddyjs` file
