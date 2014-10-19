@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://dl.dropboxusercontent.com/u/3892/gif/building-house.gif"/>
+<img style="width:100%" src="https://dl.dropboxusercontent.com/u/3892/gif/building-house.gif"/>
 </p>
 
 **Check-build** verify that your NodeJS project follow team conventions, is well written and secure.
