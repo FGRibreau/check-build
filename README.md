@@ -11,10 +11,11 @@
 > 
 > – 10/19/2014
 
-[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build)
-[![Version](http://badge.fury.io/js/check-build.png)](https://david-dm.org/FGRibreau/check-build)
 
 # Usage
+
+[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build)
+[![Version](http://badge.fury.io/js/check-build.png)](https://david-dm.org/FGRibreau/check-build)
 
 ```shell
 npm install check-build -g
