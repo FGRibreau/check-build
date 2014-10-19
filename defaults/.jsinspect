@@ -1,0 +1,6 @@
+{
+  "threshold": 15,
+  "identifiers": true,
+  "diff": true,
+  "color": true
+}
