@@ -56,7 +56,7 @@ echo $?
 
 # Checkbuild configuration
 
-Put a `.checkbuild` file (see [example](./defaults/.checkbuild)) in your project root directory.
+Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project root directory.
 
 ```json
 {
