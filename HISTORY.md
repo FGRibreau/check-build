@@ -1,6 +1,6 @@
 ### v1.0.5 - 10/20/2014
 
-- [Fix] use `process.cwd()` instead of `process.env.PWD`
+- [Fix] use `process.cwd() instead of `process.env.PWD`
 
 ### v1.0.4 - 10/20/2014
 
