@@ -9,7 +9,7 @@ var stripJsonComments = require('strip-json-comments');
 var checkbuildContent, checkbuildOptions;
 
 var checkbuildFile = [
-  p.resolve(process.env.PWD, './.checkbuild'),
+  p.resolve(process.cwd(), './.checkbuild'),
   p.resolve(__dirname, './defaults/.checkbuild')
 ].filter(shjs.test.bind(shjs, '-e'))[0];
 

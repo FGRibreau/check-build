@@ -10,7 +10,7 @@ module.exports = function (options, f) {
   options = options || {};
 
   var config = [
-    p.resolve(process.env.PWD, './.jshintrc'),
+    p.resolve(process.cwd(), './.jshintrc'),
     // fallback
     p.resolve(__dirname, '../../defaults/.jshintrc')
   ].filter(shjs.test.bind(shjs, '-e'))[0];
