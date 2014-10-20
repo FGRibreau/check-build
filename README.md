@@ -2,7 +2,7 @@
 <img style="width:100%" src="https://dl.dropboxusercontent.com/u/3892/gif/building-house.gif"/>
 </p>
 
-**Check-build** verify that your NodeJS project follow team conventions, is well written and secure.
+**Check-build** verify that your NodeJS project follow team conventions, is well written and *secure*.
 
 
 > “Each time I start a new project/mvp/poc/module I don't want to create/edit a new make/grunt/gulp file or whatever hype dev use these days.
