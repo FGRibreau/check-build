@@ -5,7 +5,7 @@
 **Check-build** verify that your NodeJS project follow team conventions, is well written and *secure*.
 
 
-> “Each time I start a new project/mvp/poc/module I don't want to create/edit a new make/grunt/gulp file or whatever hype dev use these days.
+> “Each time I start a new project/mvp/poc/module I don't want to create/edit a new grunt/gulp file or whatever hype dev use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
 > Let's build that once and for all.”
 > 
@@ -103,4 +103,4 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 
 # Final goal
 
-A (NodeJS) project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build final goal is to make the human out of the loop.
+A (NodeJS) project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build's final goal is to take the human out of the loop.
