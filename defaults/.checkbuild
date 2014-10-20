@@ -2,24 +2,19 @@
   "checkbuild": {
     "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"]
   },
-
   "jshint": {
-    "args": ["src/**/*.js"],
+    "args": ["src/**/*.js"]
   },
-
   "jscs": {
     "args": ["lib/**.js"]
   },
-
   "jsinspect": {
     "args": ["*.js"],
     "diff": true
   },
-
   "buddyjs": {
     "args": ["*.js"],
     "ignore": [0, 1, 200]
   },
-
   "nsp": {}
 }
