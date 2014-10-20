@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var p = require('path');
 var shjs = require("shelljs");
 var async = require("async");
@@ -40,6 +42,7 @@ async.forEachSeries(
   function (name, f) {
     var module;
 
+    // require module interface
     try {
       module = require('./src/interface/' + name);
     } catch (err) {
@@ -47,18 +50,20 @@ async.forEachSeries(
       console.error(err);
     }
 
-    // execute module
+    // execute module interface
     console.log('[%s]', name);
     module(checkbuildOptions[name], function (err) {
       if (err) {
         console.error('Checkbuild module "%s" failed, exiting.', name);
         console.error(err);
-        process.exit(1);
+        return process.exit(1);
       }
+
       f();
     }, checkbuildOptions);
 
   },
   function done() {
+    console.log('Done !');
     process.exit(0);
   });

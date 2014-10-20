@@ -1,21 +1,19 @@
-var jshint = require('jshint').JSHINT;
+'use strict';
+
 var jshintcli = require('jshint/src/cli');
 var p = require('path');
 var grunt = require('grunt');
-var fixmyjs = require('fixmyjs');
 var shjs = require("shelljs");
 
 // Expose jshint
-module.exports = function (options, f, checkBuildOptions) {
+module.exports = function (options, f) {
   options = options || {};
 
   var config = [
     p.resolve(process.env.PWD, './.jshintrc'),
     // fallback
     p.resolve(__dirname, '../../defaults/.jshintrc')
-  ].filter(function (path) {
-    return shjs.test('-e', path);
-  })[0];
+  ].filter(shjs.test.bind(shjs, '-e'))[0];
 
   try {
     options.config = jshintcli.loadConfig(config);
@@ -23,7 +21,6 @@ module.exports = function (options, f, checkBuildOptions) {
     return f(new Error('Loading `.jshintrc` : %s\n%s', config, err));
   }
 
-  var filepath = process.env.PWD;
   options.args = grunt.file.expand(options.args);
 
   options.reporter = function (results, data, options) {
