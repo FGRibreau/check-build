@@ -103,4 +103,4 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 
 # Final goal
 
-A (NodeJS) project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build final goal is to make the human out of the loop.
+A (NodeJS) project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build's final goal is to take the human out of the loop.
