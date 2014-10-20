@@ -1,3 +1,6 @@
+### v1.0.4 - 10/20/2014
+
+- jsinspect now exits when matches are found
 
 ### v1.0.3 - 10/20/2014
 
