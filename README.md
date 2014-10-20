@@ -1,5 +1,5 @@
 <p align="center">
-<img style="width:100%" src="https://dl.dropboxusercontent.com/u/3892/gif/building-house.gif"/>
+<img style="width:100%" src="./docs/building-house.gif"/>
 </p>
 
 **Check-build** verify that your NodeJS project follow team conventions, is well written and *secure*.
@@ -48,7 +48,7 @@ echo $?
 - [Nsp](https://github.com/nodesecurity/nsp) Check your project dependencies for security issues.
 
 <p align="center">
-<img src="https://dl.dropboxusercontent.com/u/3892/gif/mindblown2.gif"/>
+<img src="./docs/mindblown2.gif"/>
 </p>
 
 # Philosophy
