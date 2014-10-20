@@ -18,6 +18,6 @@ module.exports = function (options, f) {
     found++;
   });
 
-  detector.run().then(f).
+  detector.run(f).then(f).
   catch (f);
 };

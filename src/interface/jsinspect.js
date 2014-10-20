@@ -16,10 +16,19 @@ module.exports = function (options, f) {
   var ReporterType = reporters[options.reporter] || reporters['default'];
   new ReporterType(inspector, options.diff);
 
+  var match = 0;
+  inspector.on('match', function () {
+    match++;
+  });
+
   try {
     inspector.run();
   } catch (err) {
     return f(err);
+  }
+
+  if (match > 0) {
+    return f(new Error("Similarity in code found"));
   }
 
   f();
