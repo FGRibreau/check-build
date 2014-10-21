@@ -1,3 +1,7 @@
+### v1.0.6 - 10/20/2014
+
+- [Fix] upgraded buddy.js to `v0.7.0`
+
 ### v1.0.5 - 10/20/2014
 
 - [Fix] use `process.cwd() instead of `process.env.PWD`

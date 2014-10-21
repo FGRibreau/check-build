@@ -99,7 +99,6 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 # Todo
 
 - Fork jsinspect to read a `.jsinspect` file
-- Fork buddyjs to read a `.buddyjs` file
 
 # Final goal
 
