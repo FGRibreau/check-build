@@ -53,7 +53,7 @@ async.forEachSeries(
     // execute module interface
     console.log('[%s]', name);
     module(checkbuildOptions[name], function (err) {
-      if (err) {
+      if (err && ! checkbuildOptions.checkbuild.continueOnError) {
         console.error('Checkbuild module "%s" failed, exiting.', name);
         console.error(err);
         return process.exit(1);
