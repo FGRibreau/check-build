@@ -96,10 +96,6 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 
 ```
 
-# Todo
-
-- Fork jsinspect to read a `.jsinspect` file
-
 # Final goal
 
 A (NodeJS) project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build's final goal is to take the human out of the loop.
