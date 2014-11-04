@@ -99,6 +99,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 # Todo
 
 - Fork jsinspect to read a `.jsinspect` file
+- Add `npm outdated`
 
 # Final goal
 
