@@ -66,7 +66,8 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 ```json
 {
   "checkbuild": {
-    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"]
+    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"],
+    "continueOnError": true  // don't exit immediately if one of the tools reports an error
   },
 
   "jshint": {
