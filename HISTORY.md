@@ -1,3 +1,7 @@
+### v1.1.0 - 11/15/2014
+
+- [New] added `continueOnError` and `allowFailures` configuration options to `.checkbuild`
+
 ### v1.0.6 - 10/20/2014
 
 - [Fix] upgraded buddy.js to `v0.7.0`

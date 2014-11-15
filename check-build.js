@@ -37,9 +37,10 @@ try {
   process.exit(1);
 }
 
-async.forEachSeries(
+async.reduce(
   checkbuildOptions.checkbuild.enable,
-  function (name, f) {
+  0,
+  function (errors, name, f) {
     var module;
 
     // require module interface
@@ -54,16 +55,27 @@ async.forEachSeries(
     console.log('[%s]', name);
     module(checkbuildOptions[name], function (err) {
       if (err) {
-        console.error('Checkbuild module "%s" failed, exiting.', name);
+        console.error('Checkbuild module "%s" failed.', name);
         console.error(err);
-        return process.exit(1);
+
+        if (!checkbuildOptions.checkbuild.continueOnError) {
+          return process.exit(1);
+        }
+
+        errors++;
       }
 
-      f();
+      f(null, errors);
     }, checkbuildOptions);
 
   },
-  function done() {
+  function done(__, errors) {
+
+    if (errors > 0 && !checkbuildOptions.checkbuild.allowFailures) {
+      console.error('%s modules failed, exiting.', errors);
+      return process.exit(1);
+    }
+
     console.log('Done !');
     process.exit(0);
   });

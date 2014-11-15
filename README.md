@@ -57,7 +57,7 @@ echo $?
 - Don't reinvent the wheel, leverage each module own configuration file. E.g. `.jshintrc`.
 - Even if the underneath module is not capable of handling multiple files, abstract it.
 - Use `multimatch` everywhere.
-- `.checkbuild` is there to configure each module (if necessary), checkbuild will forward these parameters to each module implementation.
+- `.checkbuild` is there to configure each module (in case they don't use dot files for configuration), checkbuild will forward these parameters to each module implementation.
 
 # Checkbuild configuration
 
@@ -66,7 +66,11 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 ```json
 {
   "checkbuild": {
-    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"]
+    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"],
+    // don't exit immediately if one of the tools reports an error (default true)
+    "continueOnError": true,
+    // don't exit(1) even if we had some failures (default false)
+    "allowFailures": false
   },
 
   "jshint": {
