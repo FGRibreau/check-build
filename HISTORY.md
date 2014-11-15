@@ -1,3 +1,7 @@
+### v1.2.0 - 11/15/2014
+
+- [New] added [David](https://github.com/alanshaw/david), Check that your project dependencies are up to date. [#7](https://github.com/FGRibreau/check-build/issues/7)
+
 ### v1.1.0 - 11/15/2014
 
 - [New] added `continueOnError` and `allowFailures` configuration options to `.checkbuild`

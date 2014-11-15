@@ -2,7 +2,7 @@
 <img style="width:100%" src="./docs/building-house.gif"/>
 </p>
 
-**Check-build** - Verify that your NodeJS project follow team conventions, is well written and *secure*.
+**Check-build** - Verify that your NodeJS project follow team conventions, is well written, up to date and *secure*.
 
 
 > “Each time I start a new project/mvp/poc/module I don't want to create/edit a new grunt/gulp file or whatever hype dev use these days.
@@ -43,6 +43,10 @@ echo $?
 - [JSInspect](https://www.npmjs.org/package/jsinspect) Detect structural similarities in your code.
 - [buddy.js](https://github.com/danielstjules/buddy.js) Detect magic number in your code.
 
+### Freshness
+
+- [David](https://github.com/alanshaw/david) Check that your project dependencies are up to date.
+
 ### Security
 
 - [Nsp](https://github.com/nodesecurity/nsp) Check your project dependencies for security issues.
@@ -66,7 +70,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 ```json
 {
   "checkbuild": {
-    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"],
+    "enable": ["jshint", "jscs", "jsinspect", "nsp", "david"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)

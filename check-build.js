@@ -72,7 +72,7 @@ async.reduce(
   function done(__, errors) {
 
     if (errors > 0 && !checkbuildOptions.checkbuild.allowFailures) {
-      console.error('%s modules failed, exiting.', errors);
+      console.error('%s module(s) failed, exiting.', errors);
       return process.exit(1);
     }
 
