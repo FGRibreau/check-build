@@ -77,6 +77,13 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
     "allowFailures": false
   },
 
+  "david": {
+    "warn": {
+      "E404": true
+    }
+    // ... and so on.
+  },
+
   "jshint": {
     "args": ["src/**/*.js"]
     // ... and so on.

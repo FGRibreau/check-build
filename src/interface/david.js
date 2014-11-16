@@ -1,11 +1,15 @@
 'use strict';
 
+var _ = require('lodash');
 var david = require('david');
 var shjs = require('shelljs');
 var p = require('path');
 
 module.exports = function (options, f) {
-  options = options || {};
+  options = _.extend({
+    dev: false,
+    stable: false
+  }, options);
 
   var manifest;
 
@@ -15,10 +19,7 @@ module.exports = function (options, f) {
     return f(new Error('Loading `package.json` : ' + err));
   }
 
-  david.getUpdatedDependencies(manifest, {
-    dev: false,
-    stable: false
-  }, function (err, deps) {
+  david.getUpdatedDependencies(manifest, options, function (err, deps) {
     if (err) {
       return f(new Error('Could not get updated depencendies'));
     }
