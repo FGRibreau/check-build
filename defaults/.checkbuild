@@ -11,7 +11,7 @@
     "args": ["src/**/*.js"]
   },
   "jscs": {
-    "args": ["lib/**.js"]
+    "args": ["src/**/*.js"]
   },
   "jsinspect": {
     "args": ["*.js"],

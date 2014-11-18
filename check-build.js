@@ -55,7 +55,9 @@ async.reduce(
     console.log('[%s]', name);
     module(checkbuildOptions[name], function (err) {
       if (err) {
+        console.error();
         console.error('Checkbuild module "%s" failed.', name);
+        console.error();
         console.error(err);
 
         if (!checkbuildOptions.checkbuild.continueOnError) {
@@ -65,6 +67,8 @@ async.reduce(
         errors++;
       }
 
+      console.log();
+
       f(null, errors);
     }, checkbuildOptions);
 
@@ -72,6 +76,7 @@ async.reduce(
   function done(__, errors) {
 
     if (errors > 0 && !checkbuildOptions.checkbuild.allowFailures) {
+      console.error();
       console.error('%s module(s) failed, exiting.', errors);
       return process.exit(1);
     }

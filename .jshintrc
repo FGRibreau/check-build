@@ -31,7 +31,7 @@
     "maxparams"     : 10,    // {int} Max number of formal params allowed per function
     "maxdepth"      : 5,    // {int} Max depth of nested blocks (within functions)
     "maxstatements" : 30,    // {int} Max number statements per function
-    "maxcomplexity" : 6,    // {int} Max cyclomatic complexity per function
+    "maxcomplexity" : 12,    // {int} Max cyclomatic complexity per function
     "maxlen"        : 110,    // {int} Max number of characters per line
 
     // Relaxing
