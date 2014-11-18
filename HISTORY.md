@@ -1,3 +1,8 @@
+### v1.3.0 - 11/18/2014
+
+- [Fix] [jscs integration #12 by @ruimarinho](https://github.com/FGRibreau/check-build/pull/12)  
+- [New] [Add options configuration to david](https://github.com/FGRibreau/check-build/pull/11)  
+
 ### v1.2.0 - 11/15/2014
 
 - [New] added [David](https://github.com/alanshaw/david), Check that your project dependencies are up to date. [#7](https://github.com/FGRibreau/check-build/issues/7)
