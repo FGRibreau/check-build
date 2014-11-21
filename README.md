@@ -67,7 +67,7 @@ echo $?
 
 Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project root directory.
 
-```json
+```javascript
 {
   "checkbuild": {
     "enable": ["jshint", "jscs", "jsinspect", "nsp", "david"],
