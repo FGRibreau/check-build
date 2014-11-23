@@ -2,10 +2,10 @@
 
 'use strict';
 
+var JSON5 = require('json5');
 var p = require('path');
 var shjs = require("shelljs");
 var async = require("async");
-var stripJsonComments = require('strip-json-comments');
 var checkbuildContent, checkbuildOptions;
 
 var checkbuildFile = [
@@ -30,7 +30,7 @@ if (!checkbuildContent) {
 }
 
 try {
-  checkbuildOptions = JSON.parse(stripJsonComments(checkbuildContent));
+  checkbuildOptions = JSON5.parse(checkbuildContent);
 } catch (err) {
   console.error('Invalid json content inside `.checkbuild`');
   console.error(err);

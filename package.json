@@ -26,10 +26,10 @@
     "jshint": "^2.5.6",
     "jshint-stylish": "^1.0.0",
     "jsinspect": "^0.2.0",
+    "json5": "^0.4.0",
     "lodash": "^2.4.1",
     "node-filepaths": "0.0.2",
     "nsp": "^0.4.2",
-    "shelljs": "^0.3.0",
-    "strip-json-comments": "^1.0.2"
+    "shelljs": "^0.3.0"
   }
 }
