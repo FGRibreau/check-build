@@ -8,7 +8,7 @@ var p = require('path');
 module.exports = function (options, f) {
   options = _.extend({
     dev: false,
-    stable: false
+    stable: true
   }, options);
 
   var manifest;
