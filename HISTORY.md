@@ -1,3 +1,7 @@
+### v1.3.1 - 21/01/2015
+
+- [Fix] Upgrade david, buddyjs, fixmyjs, nsp and jsinspect.
+
 ### v1.3.0 - 11/18/2014
 
 - [Fix] [jscs integration #12 by @ruimarinho](https://github.com/FGRibreau/check-build/pull/12)  
