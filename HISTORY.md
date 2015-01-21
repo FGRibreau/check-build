@@ -1,4 +1,4 @@
-### v1.3.0 - 21/01/2015
+### v1.3.1 - 21/01/2015
 
 - [Fix] Upgrade david, buddyjs, fixmyjs, nsp and jsinspect.
 
