@@ -21,8 +21,20 @@ module.exports = function (options, f) {
 
   david.getUpdatedDependencies(manifest, options, function (err, deps) {
     if (err) {
+      console.log(err);
       return f(new Error('Could not get updated depencendies'));
     }
+
+    deps = Object.keys(deps).reduce(function (obj, depName) {
+      var dep = deps[depName];
+      if (!dep.warn) {
+        obj[depName] = dep;
+        return obj; // keep non-warn deps
+      }
+
+      console.log('Skipping %s', dep.warn.message);
+      return obj; // skip wark
+    }, {});
 
     if (Object.keys(deps).length > 0) {
       listDependencies(deps);
