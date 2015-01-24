@@ -1,3 +1,7 @@
+### v1.3.2 - 24/01/2015
+
+- [Fix] Fix david integration.
+
 ### v1.3.1 - 21/01/2015
 
 - [Fix] Upgrade david, buddyjs, fixmyjs, nsp and jsinspect.
