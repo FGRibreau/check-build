@@ -6,7 +6,7 @@ var shjs = require('shelljs');
 var p = require('path');
 
 module.exports = function (options, f) {
-  options = _.extend({
+  options = _.assign({
     dev: false,
     stable: true
   }, options);

@@ -9,7 +9,7 @@ var grunt = require('grunt');
 var path = require('path');
 
 module.exports = function (options, f) {
-  options = _.extend({
+  options = _.assign({
     args: [],
     color: true,
     config: null,
