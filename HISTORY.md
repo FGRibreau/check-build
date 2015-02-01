@@ -1,3 +1,7 @@
+### v1.3.3 - 24/01/2015
+
+- [Fix] [Update dependencies #18 by @ruimarinho](https://github.com/FGRibreau/check-build/pull/18)
+
 ### v1.3.2 - 24/01/2015
 
 - [Fix] Fix david integration.
