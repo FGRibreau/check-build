@@ -21,5 +21,9 @@
     "args": ["*.js"],
     "ignore": [0, 1, 200]
   },
-  "nsp": {}
+  "nsp": {},
+  "plato": {
+    "args": ["*.js"],
+    "maintainability": 70.00;
+  }
 }
