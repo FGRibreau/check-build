@@ -14,9 +14,9 @@ module.exports = function (options, f) {
   }
 
   var platoRes = shjs.cat(p.resolve(__dirname, '../../node_modules/plato/bin/plato.js package'));
-  var maintainability = parseFloat(JSON.parse(platoRes).average.maintainability);
+  var avgMaintainability = parseFloat(JSON.parse(platoRes).average.maintainability);
 
-  if (maintainability < 70) {
+  if (avgMaintainability < 70) {
     return f(new Error('Your project average maintainability is under 70%'));
   }
 
