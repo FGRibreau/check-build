@@ -24,5 +24,7 @@
   "nsp": {},
   "plato": {
     "args": ["*.js"],
+    // define your project min average maintainability
+    "avgMaintainability": 70.00
   }
 }
