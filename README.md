@@ -1,8 +1,4 @@
 
-<p align="center">
-<a target="_blank" href="http://fr.slideshare.net/FGRibreau/continous-integration-of-js-projects-checkbuild-philosophy"><img style="width:100%" src="https://cloud.githubusercontent.com/assets/138050/6199101/a16874ae-b42e-11e4-94fd-bd739d3ba4f4.jpg"></a>
-</p>
-
 **Check-build** - Verify that your NodeJS project follow team conventions, is well written, up to date and *secure*.
 
 
@@ -12,6 +8,9 @@
 > 
 > – 10/19/2014
 
+<p align="center">
+<a target="_blank" href="http://fr.slideshare.net/FGRibreau/continous-integration-of-js-projects-checkbuild-philosophy"><img style="width:100%" src="https://cloud.githubusercontent.com/assets/138050/6199101/a16874ae-b42e-11e4-94fd-bd739d3ba4f4.jpg"></a>
+</p>
 
 # Usage
 
