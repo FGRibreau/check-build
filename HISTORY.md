@@ -1,3 +1,8 @@
+### v1.4.1 - 18/02/2015
+
+- [Fix] JsInspect upgrade check-build interface.
+
+
 ### v1.4.0 - 18/02/2015
 
 - [Feat] Check-build now supports an `ignore` option for david. It will be removed (the update will be transparent for our users) once David support this feature natively (see issue [https://github.com/alanshaw/david/issues/63](#63).

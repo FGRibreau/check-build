@@ -14,7 +14,9 @@ module.exports = function (options, f) {
 
   // Retrieve the requested reporter
   var ReporterType = reporters[options.reporter] || reporters['default'];
-  new ReporterType(inspector, options.diff);
+  new ReporterType(inspector,{
+    diff: options.diff
+  });
 
   var match = 0;
   inspector.on('match', function () {
