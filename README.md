@@ -80,7 +80,8 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
   "david": {
     "warn": {
       "E404": true
-    }
+    },
+    "ignore": ["socket.io"] // don't check socket.io package with david
     // ... and so on.
   },
 

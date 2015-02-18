@@ -1,3 +1,7 @@
+### v1.4.0 - 18/02/2015
+
+- [Feat] Check-build now supports an `ignore` option for david. It will be removed (the update will be transparent for our users) once David support this feature natively (see issue [https://github.com/alanshaw/david/issues/63](#63).
+
 ### v1.3.3 - 24/01/2015
 
 - [Fix] [Update dependencies #18 by @ruimarinho](https://github.com/FGRibreau/check-build/pull/18)

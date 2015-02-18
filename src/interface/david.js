@@ -8,7 +8,8 @@ var p = require('path');
 module.exports = function (options, f) {
   options = _.assign({
     dev: false,
-    stable: true
+    stable: true,
+    ignore: []
   }, options);
 
   var manifest;
@@ -27,6 +28,14 @@ module.exports = function (options, f) {
 
     deps = Object.keys(deps).reduce(function (obj, depName) {
       var dep = deps[depName];
+
+      if(options.ignore.indexOf(depName) !== -1){
+        // once https://github.com/alanshaw/david/issues/63
+        // will be fixed, we will be able to remove these lines
+        console.log('Ignoring: %s', depName);
+        return obj;
+      }
+
       if (!dep.warn) {
         obj[depName] = dep;
         return obj; // keep non-warn deps
