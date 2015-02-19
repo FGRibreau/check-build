@@ -1,7 +1,7 @@
 {
   "checkbuild": {
     // "buddyjs"
-    "enable": ["jshint", "jscs", "jsinspect", "nsp", "david"],
+    "enable": ["jshint", "jscs", "jsinspect", "nsp", "david", "plato"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
@@ -21,5 +21,10 @@
     "args": ["*.js"],
     "ignore": [0, 1, 200]
   },
-  "nsp": {}
+  "nsp": {},
+  "plato": {
+    "args": ["*.js"],
+    // define your project min average maintainability
+    "avgMaintainability": 70.00
+  }
 }
