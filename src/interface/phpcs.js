@@ -28,13 +28,12 @@ var buildCommand = function (opt) {
     'standard',
     'warningSeverity',
     'errorSeverity',
-    'encoding',
-    'standard'
+    'encoding'
   ];
 
   for (commandOptionName in possibleOptions) {
     if (_.has(opt, possibleOptions[commandOptionName])) {
-      command += proccedCommandDetectection(opt, possibleOptions[commandOptionName]);
+      command += proccedCommandDetection(opt, possibleOptions[commandOptionName]);
     }
   }
 
@@ -55,7 +54,7 @@ var buildCommand = function (opt) {
   return command;
 };
 
-var proccedCommandDetectection = function (opt, optionName) {
+var proccedCommandDetection = function (opt, optionName) {
   return ' --' + _.kebabCase(optionName) + '="' + opt[optionName] + '"';
 };
 
