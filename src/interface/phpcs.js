@@ -22,7 +22,6 @@ var buildCommand = function (opt) {
   opt = opt || {};
 
   var command = opt.bin || 'phpcs';
-  var commandOptionName;
 
   var possibleOptions = [
     'standard',
@@ -31,31 +30,39 @@ var buildCommand = function (opt) {
     'encoding'
   ];
 
-  for (commandOptionName in possibleOptions) {
-    if (_.has(opt, possibleOptions[commandOptionName])) {
-      command += proccedCommandDetection(opt, possibleOptions[commandOptionName]);
-    }
-  }
+  var formatParamter = _.curry(proccedCommandDetection);
+  var formatExclude = _.curry(function (exclusion) {
+      return '--ignore=' + exclusion;
+  });
 
-  if (_.has(opt, 'excludes') && _.isArray(opt.excludes)) {
-    for (var i = 0, len = opt.excludes.length; i < len; i++) {
-      command += ' --ignore=' + opt.excludes[i];
-    }
-  }
+  var has = _.curry(_.has, 2);
+  var isArray = _.curry(_.isArray, 1);
 
-  if (_.has(opt, 'showSniffCode')) {
-    command += ' -s';
-  }
+  var parameters = _.chain(possibleOptions)
+    .filter(has(opt))
+    .map(formatParamter(opt))
+    .value();
 
-  if (_.has(opt, 'includes') && _.isArray(opt.includes)) {
-      command += ' ' + opt.includes.join(' ');
-  }
+  var ignores = _.chain(opt)
+    .pick('excludes')
+    .filter(isArray())
+    .first()
+    .map(formatExclude())
+    .value();
 
-  return command;
+  var sniffCode = _.has(opt, 'showSniffCode') ? '-s':'';
+
+  var includes = _.chain(opt)
+    .pick('includes')
+    .filter(isArray())
+    .first()
+    .value();
+
+  return [command].concat(parameters, ignores, sniffCode, includes).join(' ');
 };
 
 var proccedCommandDetection = function (opt, optionName) {
-  return ' --' + _.kebabCase(optionName) + '="' + opt[optionName] + '"';
+  return '--' + _.kebabCase(optionName) + '="' + opt[optionName] + '"';
 };
 
 module.exports = phpcsInterface;
