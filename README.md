@@ -93,6 +93,11 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
   "jscs": {
     "args": ["lib/**.js"]
     // ... and so on.
+    // instead of putting a .jscrc inside each of your project with check-build
+    // you can specify an URL. 
+    // That URL will be downloaded each time check-build is run 
+    // and its content will be saved inside check-build command current directory
+    // "url":"https://raw.githubusercontent.com/FGRibreau/javascript/master/.jscsrc"
   },
 
   "jsinspect": {
