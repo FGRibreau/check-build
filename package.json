@@ -1,6 +1,6 @@
 {
   "name": "check-build",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Check that your NodeJS project follow conventions, is well written, up to date and secure.",
   "bin": {
     "check-build": "check-build.js"
