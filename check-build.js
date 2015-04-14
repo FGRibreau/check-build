@@ -10,11 +10,12 @@ var checkbuildContent, checkbuildOptions;
 
 var checkbuildFile = [
   p.resolve(process.cwd(), './.checkbuild'),
-  p.resolve(__dirname, './defaults/.checkbuild')
+  p.resolve(process.cwd(), './.checkbuildrc'),
+  p.resolve(__dirname, './defaults/.checkbuildrc')
 ].filter(shjs.test.bind(shjs, '-e'))[0];
 
 if (!checkbuildFile) {
-  console.error('`.checkbuild` is not present inside project root nor inside default folder.');
+  console.error('`.checkbuildrc` is not present inside project root nor inside default folder.');
   process.exit(1);
 }
 
@@ -24,15 +25,10 @@ try {
   console.error('Could not open `%s`', checkbuildFile, err);
 }
 
-if (!checkbuildContent) {
-  console.log('Using default `.checkbuild`');
-  checkbuildContent = shjs.cat(p.resolve(__dirname, './examples/.checkbuild'));
-}
-
 try {
   checkbuildOptions = JSON5.parse(checkbuildContent);
 } catch (err) {
-  console.error('Invalid json content inside `.checkbuild`');
+  console.error('Invalid json content inside `.checkbuildrc`');
   console.error(err);
   process.exit(1);
 }

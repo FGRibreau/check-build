@@ -5,7 +5,7 @@
 > “Each time I start a new project/mvp/poc/module I don't want to create/edit a new grunt/gulp file or whatever hype dev use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
 > Let's build that once and for all.”
-> 
+>
 > – 10/19/2014
 
 <p align="center">
@@ -26,7 +26,7 @@ echo $?
 # 0 if everything went right, 1 otherwise.
 ```
 
-# What's inside 
+# What's inside
 
 ### Code error and potential problem detection
 
@@ -61,11 +61,11 @@ echo $?
 - Don't reinvent the wheel, leverage each module own configuration file. E.g. `.jshintrc`.
 - Even if the underneath module is not capable of handling multiple files, abstract it.
 - Use `multimatch` everywhere.
-- `.checkbuild` is there to configure each module (in case they don't use dot files for configuration), checkbuild will forward these parameters to each module implementation.
+- `.checkbuildrc` is there to configure each module (in case they don't use dot files for configuration), checkbuild will forward these parameters to each module implementation.
 
 # Checkbuild configuration
 
-Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project root directory.
+Put a `.checkbuildrc` file ([example](./defaults/.checkbuildrc)) in your project root directory.
 
 ```javascript
 {
