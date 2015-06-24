@@ -32,7 +32,7 @@ module.exports = function (options, f) {
     // }
 
     // use jshint-stylish by default
-    var stylish = require(require('jshint-stylish')).reporter(results, data, options);
+    var stylish = require('jshint-stylish').reporter(results, data, options);
     return stylish;
   };
 

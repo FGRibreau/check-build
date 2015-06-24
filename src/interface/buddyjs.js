@@ -1,23 +1,39 @@
 'use strict';
 
-var Detector = require('buddy.js/lib/detector');
-var reporters = require('buddy.js/lib/reporters');
+// quick and dirty integration of buddy
+var p = require('path');
+var _ = require('lodash');
 var grunt = require('grunt');
+var exec = require('child_process').exec;
 
+// Expose buddyjs
 module.exports = function (options, f) {
-  options.args = grunt.file.expand(options.args);
+  options = options || {};
+  var NODE_MODULES = p.resolve(__dirname, '../../', 'node_modules/');
+  var buddy = p.resolve(NODE_MODULES, '.bin/buddy');
 
-  // Retrieve the requested reporter, defaulting to simple
-  var ReporterType = reporters[options.reporter] || reporters.simple;
-  var detector = new Detector(options.args, options.enforceConst, options.ignore);
-  new ReporterType(detector);
+  var params = {
+    '--ignore': options.ignore || [],
+    '--reporter': options.reporter || 'detailed'
+  };
 
-  var found = 0;
+  var args = grunt.file.expand(options.args).join(' ');
+  var cmd = [
+    buddy,
+    _.reduce(params, function (m, v, k) {
+      m += ' ' + k + ' ' + v;
+      return m;
+    }, ''),
+    args
+  ].join(' ');
 
-  detector.on('found', function () {
-    found++;
+  exec(cmd, function (error, stdout, stderr) {
+    console.log(stdout);
+
+    if (stderr) {
+      console.error(stderr);
+    }
+
+    f(error !== null);
   });
-
-  detector.run(f).then(f).
-  catch (f);
 };
