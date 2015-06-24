@@ -31,6 +31,7 @@ echo $?
 ### Code error and potential problem detection
 
 - [JSHint](https://github.com/jshint/jshint) Static analysis tool for JavaScript (using [JSHint stylish](https://github.com/sindresorhus/jshint-stylish)). If `.jshintrc` is not present in project root, check-build will use this [.jshintrc](./defaults/.jshintrc).
+- [JSXHint](https://github.com/STRML/JSXHint) Static analysis tool for JavaScript and JSX. If `.jshintrc` is not present in project root, check-build will use this [.jshintrc](./defaults/.jshintrc).
 
 *[To be implemented]*: [FixMyJS](https://github.com/jshint/fixmyjs) Automatically fix silly lint errors.
 
@@ -70,7 +71,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 ```javascript
 {
   "checkbuild": {
-    "enable": ["jshint", "jscs", "jsinspect", "nsp", "david"],
+    "enable": ["jshint", "jsxhint", "jscs", "jsinspect", "nsp", "david"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
@@ -87,6 +88,11 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 
   "jshint": {
     "args": ["src/**/*.js"]
+    // ... and so on.
+  },
+
+ "jsxhint": {
+    "args": ["src/**/*.jsx"]
     // ... and so on.
   },
 
