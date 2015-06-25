@@ -13,8 +13,7 @@ module.exports = function (options, f) {
   var buddy = p.resolve(NODE_MODULES, '.bin/buddy');
 
   var params = {
-    '--ignore': options.ignore || [],
-    '--reporter': options.reporter || 'detailed'
+    '--ignore': options.ignore || []
   };
 
   var args = grunt.file.expand(options.args).join(' ');
