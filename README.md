@@ -88,6 +88,11 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 
   "jshint": {
     "args": ["src/**/*.js"]
+    // instead of putting a .jshintrc inside each of your project with check-build
+    // you can specify an URL. 
+    // That URL will be downloaded each time check-build is run 
+    // and its content will be saved inside check-build command current directory
+    // "url":"https://raw.githubusercontent.com/FGRibreau/javascript/master/.jshintrc"
     // ... and so on.
   },
 
