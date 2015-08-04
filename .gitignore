@@ -31,3 +31,4 @@ node_modules
 .env
 .npmignore
 .jscsrc
+.jshintrc
