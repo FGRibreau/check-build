@@ -1,5 +1,41 @@
 # Change Log
 
+## [v1.7.0](https://github.com/fgribreau/check-build/tree/v1.7.0) (2015-08-04)
+
+[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.6.1...v1.7.0)
+
+**Merged pull requests:**
+
+- fix\(jshint\): use `url:` [\#32](https://github.com/FGRibreau/check-build/pull/32) ([FGRibreau](https://github.com/FGRibreau))
+
+- feat\(jshint\): download a distant .jshintrc if `url:` is specified [\#31](https://github.com/FGRibreau/check-build/pull/31) ([FGRibreau](https://github.com/FGRibreau))
+
+## [v1.6.1](https://github.com/fgribreau/check-build/tree/v1.6.1) (2015-06-25)
+
+[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.6.0...v1.6.1)
+
+**Fixed bugs:**
+
+- "No such file or directory: detailed" bug with buddyjs [\#30](https://github.com/FGRibreau/check-build/issues/30)
+
+## [v1.6.0](https://github.com/fgribreau/check-build/tree/v1.6.0) (2015-06-24)
+
+[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.5.0...v1.6.0)
+
+**Implemented enhancements:**
+
+- Support jsxhint [\#28](https://github.com/FGRibreau/check-build/issues/28)
+
+**Closed issues:**
+
+- multiple .jshintrc seems to be not supported.  [\#27](https://github.com/FGRibreau/check-build/issues/27)
+
+**Merged pull requests:**
+
+- feat\(jsxhint\): added support for jsxhint, fixes \#28 [\#29](https://github.com/FGRibreau/check-build/pull/29) ([FGRibreau](https://github.com/FGRibreau))
+
+- Add phpcs support [\#24](https://github.com/FGRibreau/check-build/pull/24) ([Freyskeyd](https://github.com/Freyskeyd))
+
 ## [v1.5.0](https://github.com/fgribreau/check-build/tree/v1.5.0) (2015-03-31)
 
 [Full Changelog](https://github.com/fgribreau/check-build/compare/v1.4.1...v1.5.0)
