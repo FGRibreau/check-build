@@ -1,10 +1,8 @@
 'use strict';
 
 var jshintcli = require('jshint/src/cli');
-var stripJsonComments = require('strip-json-comments');
 var p = require('path');
 var grunt = require('grunt');
-var shjs = require('shelljs');
 var fs = require('fs');
 var path = require('path');
 var request = require('requestretry');
