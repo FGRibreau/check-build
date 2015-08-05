@@ -1,5 +1,23 @@
 # Change Log
 
+## [v1.7.1](https://github.com/fgribreau/check-build/tree/v1.7.1) (2015-08-05)
+
+[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.7.0...v1.7.1)
+
+**Implemented enhancements:**
+
+- Add error handling when remote distant files \(jscs & jshint\) are not found [\#33](https://github.com/FGRibreau/check-build/issues/33)
+
+**Closed issues:**
+
+- JSHint url: write the same filename as the distant one [\#34](https://github.com/FGRibreau/check-build/issues/34)
+
+**Merged pull requests:**
+
+- Add error handling when remote distant files \(jscs & jshint\) are not found [\#36](https://github.com/FGRibreau/check-build/pull/36) ([FGRibreau](https://github.com/FGRibreau))
+
+- JSHint url: write the same filename as the distant one [\#35](https://github.com/FGRibreau/check-build/pull/35) ([FGRibreau](https://github.com/FGRibreau))
+
 ## [v1.7.0](https://github.com/fgribreau/check-build/tree/v1.7.0) (2015-08-04)
 
 [Full Changelog](https://github.com/fgribreau/check-build/compare/v1.6.1...v1.7.0)
