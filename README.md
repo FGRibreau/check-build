@@ -91,9 +91,17 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
     // instead of putting a .jshintrc inside each of your project with check-build
     // you can specify an URL. 
     // That URL will be downloaded each time check-build is run 
-    // and its content will be saved inside check-build command current directory
-    // "url":"https://raw.githubusercontent.com/FGRibreau/javascript/master/.jshintrc"
-    // ... and so on.
+    // and its content will be saved inside check-build command current directory.
+    // for instance the above .checkbuild jshint configuration:
+    // "url":"https://raw.githubusercontent.com/FGRibreau/javascript/master/.jshintrc_base"
+    // will download the jshintrc_base (the common jshint convention for your organization) inside your project. 
+    // This .jshintrc_base should be ignored from git and NOT commited.
+    // Then, create and commit a .jshintrc that contains at least:
+    // {
+    //  "extends": "./.jshintrc_base",
+    //  ...
+    // }
+    // inside this .jshintrc file you will be able to put project-specific jshint configuration.
   },
 
  "jsxhint": {
