@@ -3,31 +3,19 @@
 var jshintcli = require('jshint/src/cli');
 var p = require('path');
 var grunt = require('grunt');
-var fs = require('fs');
-var path = require('path');
-var request = require('requestretry');
+var utils = require('./_utils');
 
 // Expose jshint
 module.exports = function (options, f) {
   options = options || {};
 
-  if (options.url) {
-    request({
-      url: options.url
-    }, function (err, resp, body) {
-      if (err) {
-        return f(err);
-      }
+  utils.downloadDistantOrLoad(options.url, onConfigLoaded);
 
-      fs.writeFileSync(path.resolve(process.cwd(), '.jshintrc'), body);
+  function onConfigLoaded(err) {
+    if (err) {
+      return f(err);
+    }
 
-      onConfigLoaded();
-    });
-  } else {
-    onConfigLoaded();
-  }
-
-  function onConfigLoaded() {
     options.config = jshintcli.loadConfig(p.resolve(process.cwd(), './.jshintrc'));
     options.args = grunt.file.expand(options.args);
 

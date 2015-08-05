@@ -27,6 +27,7 @@ module.exports = function (options, f) {
 
   config = configFile.load(configPath);
 
+  // @todo use `utils.downloadDistantOrLoad` (not backward compatible with current usage)
   if (!config) {
     config = configFile.load(path.join(__dirname, '../../defaults/.jscsrc'));
   }
