@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var debug = require('debug')('check-build');
+require('../src/cli')(debug);
