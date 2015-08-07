@@ -4,7 +4,8 @@
 
 var JSON5 = require('json5');
 var p = require('path');
-var shjs = require("shelljs");
+var shjs = require('shelljs');
+var debug = require('debug')('check-build');
 var async = require("async");
 var checkbuildContent, checkbuildOptions;
 
@@ -17,6 +18,8 @@ if (!checkbuildFile) {
   console.error('`.checkbuild` is not present inside project root nor inside default folder.');
   process.exit(1);
 }
+
+debug('using %s', checkbuildFile)
 
 try {
   checkbuildContent = shjs.cat(checkbuildFile);
@@ -45,6 +48,7 @@ async.reduce(
 
     // require module interface
     try {
+      debug('loading interface %s', name);
       module = require('./src/interface/' + name);
     } catch (err) {
       console.error('Checkbuild module interface for "%s" was not found', name);
@@ -53,7 +57,7 @@ async.reduce(
 
     // execute module interface
     console.log('[%s]', name);
-    module(checkbuildOptions[name], function (err) {
+    module(debug)(checkbuildOptions[name], function (err) {
       if (err) {
         console.error();
         console.error('Checkbuild module "%s" failed.', name);

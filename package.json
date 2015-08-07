@@ -20,6 +20,7 @@
     "bluebird": "^2.3.11",
     "buddy.js": "0.x.x",
     "david": "^6.1.2",
+    "debug": "^2.2.0",
     "fixmyjs": "^1.0.2",
     "grunt": "^0.4.5",
     "jscs": "1.x.x",

@@ -4,34 +4,38 @@ var grunt = require('grunt');
 var Inspector = require('jsinspect/lib/inspector');
 var reporters = require('jsinspect/lib/reporters');
 
-module.exports = function (options, f) {
-  options.args = grunt.file.expand(options.args);
-  var inspector = new Inspector(options.args, {
-    threshold: options.threshold,
-    diff: options.diff,
-    identifiers: options.identifiers
-  });
+module.exports = function (debug) {
+  return function (options, f) {
+    options.args = grunt.file.expand(options.args);
+    var inspector = new Inspector(options.args, {
+      threshold: options.threshold,
+      diff: options.diff,
+      identifiers: options.identifiers
+    });
 
-  // Retrieve the requested reporter
-  var ReporterType = reporters[options.reporter] || reporters['default'];
-  new ReporterType(inspector,{
-    diff: options.diff
-  });
+    // Retrieve the requested reporter
+    var ReporterType = reporters[options.reporter] || reporters['default'];
+    debug('using reporter %s', ReporterType.name);
 
-  var match = 0;
-  inspector.on('match', function () {
-    match++;
-  });
+    new ReporterType(inspector, {
+      diff: options.diff
+    });
 
-  try {
-    inspector.run();
-  } catch (err) {
-    return f(err);
-  }
+    var match = 0;
+    inspector.on('match', function () {
+      match++;
+    });
 
-  if (match > 0) {
-    return f(new Error("Similarity in code found"));
-  }
+    try {
+      inspector.run();
+    } catch (err) {
+      return f(err);
+    }
 
-  f();
+    if (match > 0) {
+      return f(new Error("Similarity in code found"));
+    }
+
+    f();
+  };
 };

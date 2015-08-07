@@ -1,5 +1,7 @@
 'use strict';
-
-module.exports = function (options, f) {
-  f();
+module.exports = function (debug) {
+  return function (options, f) {
+    debug('doing nothing.');
+    f();
+  };
 };
