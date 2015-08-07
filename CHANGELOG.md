@@ -1,5 +1,19 @@
 # Change Log
 
+## [v2.0.0](https://github.com/fgribreau/check-build/tree/v2.0.0) (2015-08-07)
+
+[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.7.1...v2.0.0)
+
+**Implemented enhancements:**
+
+- Check-build should be requirable by npm [\#41](https://github.com/FGRibreau/check-build/issues/41)
+
+- Start to refactor internals [\#40](https://github.com/FGRibreau/check-build/issues/40)
+
+**Closed issues:**
+
+- DEBUG=check-build check-build should run check-build in debug mode [\#39](https://github.com/FGRibreau/check-build/issues/39)
+
 ## [v1.7.1](https://github.com/fgribreau/check-build/tree/v1.7.1) (2015-08-05)
 
 [Full Changelog](https://github.com/fgribreau/check-build/compare/v1.7.0...v1.7.1)
