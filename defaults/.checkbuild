@@ -24,5 +24,13 @@
     "args": ["*.js"],
     "ignore": [0, 1, 200]
   },
-  "nsp": {}
+  "nsp": {},
+  "david": {
+    "dev": false,
+    // whether to check devDependencies or not (default false)
+    "stable": true,
+    // whether to check dependencies or not (default true)
+    "ignore": []
+    // put ignored dependencies here (both devDependencies and dependencies)
+  }
 }
