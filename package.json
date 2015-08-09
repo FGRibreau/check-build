@@ -1,6 +1,6 @@
 {
   "name": "check-build",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Check that your NodeJS project follow conventions, is well written, up to date and secure.",
   "bin": {
     "check-build": "bin/check-build"
@@ -20,6 +20,7 @@
     "async": "1.x.x",
     "bluebird": "^2.3.11",
     "buddy.js": "0.x.x",
+    "plato": "^1.5.0",
     "david": "^6.1.2",
     "debug": "^2.2.0",
     "fixmyjs": "^1.0.2",
