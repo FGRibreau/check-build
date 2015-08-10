@@ -7,11 +7,14 @@ var grunt = require('grunt');
 module.exports = function (debug) {
   // Expose plato
   return function (options, f) {
-    var files = grunt.file.expand(options.args),
-        maintainability = parseFloat(options.maintainability),
-        belowThreshold = [],
-        errorMessage = '',
-        curMaintainability;
+    var files = grunt.file.expand(options.args);
+    var maintainability = parseFloat(options.maintainability);
+    debug('maintainability=%s', maintainability);
+
+
+    var belowThreshold = [];
+    var errorMessage = '';
+    var curMaintainability;
 
     if (files.length > 0) {
       debug('analyzing ' + files.length + ' files through plato...');
@@ -34,7 +37,7 @@ module.exports = function (debug) {
           );
 
           errorMessage += ('Some files are below maintainability threshold ' +
-                           '[' + maintainability.toFixed(2) + '%]:')
+            '[' + maintainability.toFixed(2) + '%]:')
 
           for (var i in belowThreshold) {
             curMaintainability = parseFloat(
@@ -42,8 +45,8 @@ module.exports = function (debug) {
             );
 
             errorMessage += ('\n * ' + belowThreshold[i].info.file + ' [' +
-                               curMaintainability.toFixed(2) +
-                             '%]');
+              curMaintainability.toFixed(2) +
+              '%]');
           }
 
           f(errorMessage);
