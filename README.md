@@ -71,7 +71,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 ```javascript
 {
   "checkbuild": {
-    "enable": ["jshint", "jsxhint", "jscs", "jsinspect", "nsp", "david"],
+    "enable": ["jshint", "jsxhint", "jscs", "jsinspect", "plato", "nsp", "david"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
@@ -129,6 +129,12 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
     "args": ["*.js"],
     "ignore": [0, 1, 200]
     // ... and so on.
+  },
+
+  "plato": {
+    "args": ["*.js"],
+    // define your project min average maintainability
+    "maintainability": 75.00
   },
 
   "nsp": {},
