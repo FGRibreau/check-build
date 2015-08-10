@@ -11,6 +11,9 @@ module.exports = function (debug) {
     var maintainability = parseFloat(options.maintainability);
     debug('maintainability=%s', maintainability);
 
+    if (isNaN(maintainability)) {
+      return f(new Error('when activated, plato requires a `maintainability` float option, `75.00` will be a good start.'));
+    }
 
     var belowThreshold = [];
     var errorMessage = '';
