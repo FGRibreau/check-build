@@ -1,5 +1,21 @@
 # Change Log
 
+## [v2.1.0](https://github.com/fgribreau/check-build/tree/v2.1.0) (2015-08-10)
+
+[Full Changelog](https://github.com/fgribreau/check-build/compare/v2.0.0...v2.1.0)
+
+**Merged pull requests:**
+
+- Full plato support [\#45](https://github.com/FGRibreau/check-build/pull/45) ([FGRibreau](https://github.com/FGRibreau))
+
+- Enhance plato implementation [\#44](https://github.com/FGRibreau/check-build/pull/44) ([valeriansaliou](https://github.com/valeriansaliou))
+
+- Plato support [\#43](https://github.com/FGRibreau/check-build/pull/43) ([FGRibreau](https://github.com/FGRibreau))
+
+- Document david options in README.md [\#42](https://github.com/FGRibreau/check-build/pull/42) ([valeriansaliou](https://github.com/valeriansaliou))
+
+- add Plato to control project average maintainability [\#20](https://github.com/FGRibreau/check-build/pull/20) ([julien-leroy](https://github.com/julien-leroy))
+
 ## [v2.0.0](https://github.com/fgribreau/check-build/tree/v2.0.0) (2015-08-07)
 
 [Full Changelog](https://github.com/fgribreau/check-build/compare/v1.7.1...v2.0.0)
