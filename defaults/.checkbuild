@@ -1,7 +1,7 @@
 {
   "checkbuild": {
     // "buddyjs"
-    "enable": ["jsxhint", "jshint", "jscs", "jsinspect", "nsp", "david"],
+    "enable": ["jsxhint", "jshint", "jscs", "jsinspect", "plato", "nsp", "david"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
@@ -24,5 +24,18 @@
     "args": ["*.js"],
     "ignore": [0, 1, 200]
   },
-  "nsp": {}
+  "plato": {
+    "args": ["*.js"],
+    // define your project min average maintainability
+    "maintainability": 75.00
+  },
+  "nsp": {},
+  "david": {
+    "dev": false,
+    // whether to check devDependencies or not (default false)
+    "stable": true,
+    // whether to check dependencies or not (default true)
+    "ignore": []
+    // put ignored dependencies here (both devDependencies and dependencies)
+  }
 }

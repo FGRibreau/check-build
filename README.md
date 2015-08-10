@@ -5,7 +5,7 @@
 > “Each time I start a new project/mvp/poc/module I don't want to create/edit a new grunt/gulp file or whatever hype dev use these days.
 > I want an already packed CLI with good defaults (mine) that I can drop into my continuous build/integration process.
 > Let's build that once and for all.”
-> 
+>
 > – 10/19/2014
 
 <p align="center">
@@ -26,7 +26,7 @@ echo $?
 # 0 if everything went right, 1 otherwise.
 ```
 
-# What's inside 
+# What's inside
 
 ### Code error and potential problem detection
 
@@ -89,12 +89,12 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
   "jshint": {
     "args": ["src/**/*.js"]
     // instead of putting a .jshintrc inside each of your project with check-build
-    // you can specify an URL. 
-    // That URL will be downloaded each time check-build is run 
+    // you can specify an URL.
+    // That URL will be downloaded each time check-build is run
     // and its content will be saved inside check-build command current directory.
     // for instance the above .checkbuild jshint configuration:
     // "url":"https://raw.githubusercontent.com/FGRibreau/javascript/master/.jshintrc_base"
-    // will download the jshintrc_base (the common jshint convention for your organization) inside your project. 
+    // will download the jshintrc_base (the common jshint convention for your organization) inside your project.
     // This .jshintrc_base should be ignored from git and NOT commited.
     // Then, create and commit a .jshintrc that contains at least:
     // {
@@ -113,8 +113,8 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
     "args": ["lib/**.js"]
     // ... and so on.
     // instead of putting a .jscrc inside each of your project with check-build
-    // you can specify an URL. 
-    // That URL will be downloaded each time check-build is run 
+    // you can specify an URL.
+    // That URL will be downloaded each time check-build is run
     // and its content will be saved inside check-build command current directory
     // "url":"https://raw.githubusercontent.com/FGRibreau/javascript/master/.jscsrc"
   },
@@ -131,7 +131,16 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
     // ... and so on.
   },
 
-  "nsp": {}
+  "nsp": {},
+
+  "david": {
+    "dev": false,
+    // whether to check devDependencies or not (default false)
+    "stable": true,
+    // whether to check dependencies or not (default true)
+    "ignore": []
+    // put ignored dependencies here (both devDependencies and dependencies)
+  }
 }
 
 ```
