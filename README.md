@@ -39,6 +39,9 @@ echo $?
 
 - [JSCS](https://github.com/jscs-dev/node-jscs) Check the code style of your code. If `.jscsrc` is not present in project root, check-build will use this [.jscsrc](./defaults/.jscsrc).
 
+### Code quality
+- [Plato](https://github.com/es-analysis/plato) Detect structural complexity in your code, per files.
+
 ### D.R.Y
 
 - [JSInspect](https://www.npmjs.org/package/jsinspect) Detect structural similarities in your code.
@@ -71,7 +74,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 ```javascript
 {
   "checkbuild": {
-    "enable": ["jshint", "jsxhint", "jscs", "jsinspect", "plato", "nsp", "david"],
+    "enable": ["jshint", "jsxhint", "jscs", "jsinspect", "plato", "nsp", "david", "plato"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
@@ -133,7 +136,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 
   "plato": {
     "args": ["*.js"],
-    // define your project min average maintainability
+    // define your project minimum average maintainability level
     "maintainability": 75.00
   },
 
