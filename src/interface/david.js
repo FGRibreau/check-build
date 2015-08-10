@@ -55,6 +55,8 @@ module.exports = function (debug) {
         return f(new Error('At least one dependency needs to be updated'));
       }
 
+      console.log('All dependencies are up-to-date');
+
       f();
     });
 
