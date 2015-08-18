@@ -1,7 +1,7 @@
 'use strict';
 
 // quick and dirty integration of jsxhint
-var shjs = require("shelljs");
+var shjs = require('shelljs');
 var p = require('path');
 var _ = require('lodash');
 var grunt = require('grunt');

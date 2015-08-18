@@ -33,7 +33,7 @@ module.exports = function (debug) {
     }
 
     if (match > 0) {
-      return f(new Error("Similarity in code found"));
+      return f(new Error('Similarity in code found'));
     }
 
     f();
