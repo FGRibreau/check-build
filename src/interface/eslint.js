@@ -1,9 +1,7 @@
 'use strict';
 
-var eslintcli = require('eslint/lib/cli');
 var p = require('path');
 var grunt = require('grunt');
-var fs = require('fs');
 var exec = require('child_process').exec;
 
 module.exports = function (debug) {
