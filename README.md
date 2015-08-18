@@ -31,9 +31,8 @@ echo $?
 ### Code error and potential problem detection
 
 - [JSHint](https://github.com/jshint/jshint) Static analysis tool for JavaScript (using [JSHint stylish](https://github.com/sindresorhus/jshint-stylish)). If `.jshintrc` is not present in project root, check-build will use this [.jshintrc](./defaults/.jshintrc).
-- [JSXHint](https://github.com/STRML/JSXHint) Static analysis tool for JavaScript and JSX. If `.jshintrc` is not present in project root, check-build will use this [.jshintrc](./defaults/.jshintrc).
-
-*[To be implemented]*: [FixMyJS](https://github.com/jshint/fixmyjs) Automatically fix silly lint errors.
+- [ESLint](http://eslint.org/) The pluggable linting utility for JavaScript and JSX, check-build will use a [.eslintrc](./defaults/.eslintrc) file for ESLint configuration.
+- [JSXHint](https://github.com/STRML/JSXHint) **JSXHint is DEPRECATED in favor of ESLint** Static analysis tool for JavaScript and JSX. If `.jshintrc` is not present in project root, check-build will use this [.jshintrc](./defaults/.jshintrc).
 
 ### Code style checking
 
@@ -74,7 +73,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 ```javascript
 {
   "checkbuild": {
-    "enable": ["jshint", "jsxhint", "jscs", "jsinspect", "plato", "nsp", "david", "plato"],
+    "enable": ["jshint", "eslint", "jscs", "jsinspect", "plato", "nsp", "david", "plato"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
@@ -107,8 +106,22 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
     // inside this .jshintrc file you will be able to put project-specific jshint configuration.
   },
 
- "jsxhint": {
-    "args": ["src/**/*.jsx"]
+ "eslint": {
+    "args": ["src/**/*.js", "src/**/*.jsx"],
+    // instead of putting a .eslintrc inside each of your project with check-build
+    // you can specify an URL.
+    // That URL will be downloaded each time check-build is run
+    // and its content will be saved inside check-build command current directory.
+    // for instance the above .checkbuild jshint configuration:
+    // "url":"https://raw.githubusercontent.com/FGRibreau/javascript/master/.eslintrc_base"
+    // will download the eslintrc_base (the common eslint convention for your organization) inside your project.
+    // This .eslintrc_base should be ignored from git and NOT commited.
+    // Then, create and commit a .eslintrc that contains at least:
+    // {
+    //  "extends": ["./.eslintrc_base"],
+    //  ...
+    // }
+    // inside this .eslintrc file you will be able to put project-specific ESLint configuration.
     // ... and so on.
   },
 
