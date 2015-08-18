@@ -22,7 +22,7 @@
         "node": true,
         "browser": true
     },
-    "extends": ["./.eslintrc_base", "eslint:recommended"],
+    "extends": ["./.eslintrc_base"],
     "ecmaFeatures": {
         "jsx": true,
         "experimentalObjectRestSpread": true
