@@ -1,11 +1,15 @@
 {
   "checkbuild": {
     // "buddyjs"
-    "enable": ["jsxhint", "jshint", "jscs", "jsinspect", "plato", "nsp", "david"],
+    "enable": ["eslint", "jsxhint", "jshint", "jscs", "jsinspect", "plato", "nsp", "david"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
     "allowFailures": false
+  },
+  "eslint": {
+    "args": ["src/**/*.js", "src/**/*.jsx"],
+    "url": "https://raw.githubusercontent.com/FGRibreau/javascript/master/.eslintrc_base"
   },
   "jshint": {
     "args": ["src/**/*.js"]
