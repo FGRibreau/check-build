@@ -1,5 +1,23 @@
 # Change Log
 
+## [v2.2.0](https://github.com/fgribreau/check-build/tree/v2.2.0) (2015-08-18)
+
+[Full Changelog](https://github.com/fgribreau/check-build/compare/v2.1.0...v2.2.0)
+
+**Implemented enhancements:**
+
+- Support ESLint [\#21](https://github.com/FGRibreau/check-build/issues/21)
+
+- Support plato [\#19](https://github.com/FGRibreau/check-build/issues/19)
+
+**Fixed bugs:**
+
+- David output is blank \(deps are not checked\) [\#37](https://github.com/FGRibreau/check-build/issues/37)
+
+**Merged pull requests:**
+
+- Add support for ESLint [\#47](https://github.com/FGRibreau/check-build/pull/47) ([FGRibreau](https://github.com/FGRibreau))
+
 ## [v2.1.0](https://github.com/fgribreau/check-build/tree/v2.1.0) (2015-08-10)
 
 [Full Changelog](https://github.com/fgribreau/check-build/compare/v2.0.0...v2.1.0)
