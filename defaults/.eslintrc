@@ -1,7 +1,8 @@
 {
     "rules": {
         "indent": [
-            2, 2
+            2,
+            2
         ],
         "quotes": [
             2,
@@ -14,14 +15,15 @@
         "semi": [
             2,
             "always"
-        ]
+        ],
+        "no-console" : 0
     },
     "env": {
         "es6": true,
         "node": true,
         "browser": true
     },
-    "extends": ["./.eslintrc_base", "eslint:recommended"],
+    "extends": ["./.eslintrc_base"],
     "ecmaFeatures": {
         "jsx": true,
         "experimentalObjectRestSpread": true
