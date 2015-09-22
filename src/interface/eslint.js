@@ -42,7 +42,7 @@ module.exports = function (debug) {
           console.log('✔ No problems');
         }
 
-        f(hadError ? '' : null);
+        f(hadError || null);
       });
     }
   };
