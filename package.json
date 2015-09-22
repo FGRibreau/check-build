@@ -1,6 +1,6 @@
 {
   "name": "check-build",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Check that your NodeJS project follow conventions, is well written, up to date and secure.",
   "bin": {
     "check-build": "bin/check-build"
