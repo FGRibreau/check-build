@@ -5,6 +5,9 @@
   "bin": {
     "check-build": "bin/check-build"
   },
+  "scripts":{
+    "changelog": "github-changes --o $(node -p 'process.env.npm_package_repository_url.split(\"/\")[3];') --r $(node -p 'a=process.env.npm_package_repository_url.split(\"/\");a[a.length-1].split(\".\")[0]') --token $CHANGELOG_GITHUB_TOKEN_FG -f CHANGELOG.md"
+  },
   "main": "./src",
   "repository": {
     "type": "git",
