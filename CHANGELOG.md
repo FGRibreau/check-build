@@ -1,219 +1,208 @@
-# Change Log
-
-## [v2.2.0](https://github.com/fgribreau/check-build/tree/v2.2.0) (2015-08-18)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v2.1.0...v2.2.0)
-
-**Implemented enhancements:**
-
-- Support ESLint [\#21](https://github.com/FGRibreau/check-build/issues/21)
-
-- Support plato [\#19](https://github.com/FGRibreau/check-build/issues/19)
-
-**Fixed bugs:**
-
-- David output is blank \(deps are not checked\) [\#37](https://github.com/FGRibreau/check-build/issues/37)
-
-**Merged pull requests:**
-
-- Add support for ESLint [\#47](https://github.com/FGRibreau/check-build/pull/47) ([FGRibreau](https://github.com/FGRibreau))
-
-## [v2.1.0](https://github.com/fgribreau/check-build/tree/v2.1.0) (2015-08-10)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v2.0.0...v2.1.0)
-
-**Merged pull requests:**
-
-- Full plato support [\#45](https://github.com/FGRibreau/check-build/pull/45) ([FGRibreau](https://github.com/FGRibreau))
-
-- Enhance plato implementation [\#44](https://github.com/FGRibreau/check-build/pull/44) ([valeriansaliou](https://github.com/valeriansaliou))
-
-- Plato support [\#43](https://github.com/FGRibreau/check-build/pull/43) ([FGRibreau](https://github.com/FGRibreau))
-
-- Document david options in README.md [\#42](https://github.com/FGRibreau/check-build/pull/42) ([valeriansaliou](https://github.com/valeriansaliou))
-
-- add Plato to control project average maintainability [\#20](https://github.com/FGRibreau/check-build/pull/20) ([julien-leroy](https://github.com/julien-leroy))
-
-## [v2.0.0](https://github.com/fgribreau/check-build/tree/v2.0.0) (2015-08-07)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.7.1...v2.0.0)
-
-**Implemented enhancements:**
-
-- Check-build should be requirable by npm [\#41](https://github.com/FGRibreau/check-build/issues/41)
-
-- Start to refactor internals [\#40](https://github.com/FGRibreau/check-build/issues/40)
-
-**Closed issues:**
-
-- DEBUG=check-build check-build should run check-build in debug mode [\#39](https://github.com/FGRibreau/check-build/issues/39)
-
-## [v1.7.1](https://github.com/fgribreau/check-build/tree/v1.7.1) (2015-08-05)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.7.0...v1.7.1)
-
-**Implemented enhancements:**
-
-- Add error handling when remote distant files \(jscs & jshint\) are not found [\#33](https://github.com/FGRibreau/check-build/issues/33)
-
-**Closed issues:**
-
-- JSHint url: write the same filename as the distant one [\#34](https://github.com/FGRibreau/check-build/issues/34)
-
-**Merged pull requests:**
-
-- Add error handling when remote distant files \(jscs & jshint\) are not found [\#36](https://github.com/FGRibreau/check-build/pull/36) ([FGRibreau](https://github.com/FGRibreau))
-
-- JSHint url: write the same filename as the distant one [\#35](https://github.com/FGRibreau/check-build/pull/35) ([FGRibreau](https://github.com/FGRibreau))
-
-## [v1.7.0](https://github.com/fgribreau/check-build/tree/v1.7.0) (2015-08-04)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.6.1...v1.7.0)
-
-**Merged pull requests:**
-
-- fix\(jshint\): use `url:` [\#32](https://github.com/FGRibreau/check-build/pull/32) ([FGRibreau](https://github.com/FGRibreau))
-
-- feat\(jshint\): download a distant .jshintrc if `url:` is specified [\#31](https://github.com/FGRibreau/check-build/pull/31) ([FGRibreau](https://github.com/FGRibreau))
-
-## [v1.6.1](https://github.com/fgribreau/check-build/tree/v1.6.1) (2015-06-25)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.6.0...v1.6.1)
-
-**Fixed bugs:**
-
-- "No such file or directory: detailed" bug with buddyjs [\#30](https://github.com/FGRibreau/check-build/issues/30)
-
-## [v1.6.0](https://github.com/fgribreau/check-build/tree/v1.6.0) (2015-06-24)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.5.0...v1.6.0)
-
-**Implemented enhancements:**
-
-- Support jsxhint [\#28](https://github.com/FGRibreau/check-build/issues/28)
-
-**Closed issues:**
-
-- multiple .jshintrc seems to be not supported.  [\#27](https://github.com/FGRibreau/check-build/issues/27)
-
-**Merged pull requests:**
-
-- feat\(jsxhint\): added support for jsxhint, fixes \#28 [\#29](https://github.com/FGRibreau/check-build/pull/29) ([FGRibreau](https://github.com/FGRibreau))
-
-- Add phpcs support [\#24](https://github.com/FGRibreau/check-build/pull/24) ([Freyskeyd](https://github.com/Freyskeyd))
-
-## [v1.5.0](https://github.com/fgribreau/check-build/tree/v1.5.0) (2015-03-31)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.4.1...v1.5.0)
-
-**Implemented enhancements:**
-
-- Support for an URL option for jscsrc [\#25](https://github.com/FGRibreau/check-build/issues/25)
-
-**Merged pull requests:**
-
-- Add phpcs interface [\#23](https://github.com/FGRibreau/check-build/pull/23) ([Freyskeyd](https://github.com/Freyskeyd))
-
-## [v1.4.1](https://github.com/fgribreau/check-build/tree/v1.4.1) (2015-02-18)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.4.0...v1.4.1)
-
-## [v1.4.0](https://github.com/fgribreau/check-build/tree/v1.4.0) (2015-02-18)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.3.3...v1.4.0)
-
-## [v1.3.3](https://github.com/fgribreau/check-build/tree/v1.3.3) (2015-02-01)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.3.2...v1.3.3)
-
-**Merged pull requests:**
-
-- Update dependencies [\#18](https://github.com/FGRibreau/check-build/pull/18) ([ruimarinho](https://github.com/ruimarinho))
-
-## [v1.3.2](https://github.com/fgribreau/check-build/tree/v1.3.2) (2015-01-24)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.3.1...v1.3.2)
-
-## [v1.3.1](https://github.com/fgribreau/check-build/tree/v1.3.1) (2015-01-21)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.3.0...v1.3.1)
-
-**Implemented enhancements:**
-
-- Support for flow \(a static typechecker for JavaScript\) [\#15](https://github.com/FGRibreau/check-build/issues/15)
-
-**Merged pull requests:**
-
-- Add support for JSON5 [\#17](https://github.com/FGRibreau/check-build/pull/17) ([ruimarinho](https://github.com/ruimarinho))
-
-- Remove syntax errors from README example [\#14](https://github.com/FGRibreau/check-build/pull/14) ([MattiSG](https://github.com/MattiSG))
-
-- Remove outdated todo [\#13](https://github.com/FGRibreau/check-build/pull/13) ([MattiSG](https://github.com/MattiSG))
-
-## [v1.3.0](https://github.com/fgribreau/check-build/tree/v1.3.0) (2014-11-18)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.2.0...v1.3.0)
-
-**Merged pull requests:**
-
-- Fix jscs integration [\#12](https://github.com/FGRibreau/check-build/pull/12) ([ruimarinho](https://github.com/ruimarinho))
-
-- Add options configuration to david [\#11](https://github.com/FGRibreau/check-build/pull/11) ([ruimarinho](https://github.com/ruimarinho))
-
-## [v1.2.0](https://github.com/fgribreau/check-build/tree/v1.2.0) (2014-11-15)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.1.0...v1.2.0)
-
-**Implemented enhancements:**
-
-- npm outdated [\#7](https://github.com/FGRibreau/check-build/issues/7)
-
-## [v1.1.0](https://github.com/fgribreau/check-build/tree/v1.1.0) (2014-11-15)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.0.6...v1.1.0)
-
-**Closed issues:**
-
-- Don't bail out early [\#5](https://github.com/FGRibreau/check-build/issues/5)
-
-- buddy.js now supports .buddyrc files [\#4](https://github.com/FGRibreau/check-build/issues/4)
-
-**Merged pull requests:**
-
-- Added option to ignore errors reported from tools [\#6](https://github.com/FGRibreau/check-build/pull/6) ([thom-nic](https://github.com/thom-nic))
-
-## [v1.0.6](https://github.com/fgribreau/check-build/tree/v1.0.6) (2014-10-21)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.0.5...v1.0.6)
-
-**Closed issues:**
-
-- Erros with jsinspect [\#3](https://github.com/FGRibreau/check-build/issues/3)
-
-## [v1.0.5](https://github.com/fgribreau/check-build/tree/v1.0.5) (2014-10-20)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.0.4...v1.0.5)
-
-**Merged pull requests:**
-
-- Windows fix for pwd [\#2](https://github.com/FGRibreau/check-build/pull/2) ([PSeitz](https://github.com/PSeitz))
-
-- Update README.md [\#1](https://github.com/FGRibreau/check-build/pull/1) ([brycefisher](https://github.com/brycefisher))
-
-## [v1.0.4](https://github.com/fgribreau/check-build/tree/v1.0.4) (2014-10-20)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.0.3...v1.0.4)
-
-## [v1.0.3](https://github.com/fgribreau/check-build/tree/v1.0.3) (2014-10-20)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.0.2...v1.0.3)
-
-## [v1.0.2](https://github.com/fgribreau/check-build/tree/v1.0.2) (2014-10-20)
-
-[Full Changelog](https://github.com/fgribreau/check-build/compare/v1.0.1...v1.0.2)
-
-## [v1.0.1](https://github.com/fgribreau/check-build/tree/v1.0.1) (2014-10-19)
-
-
-
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
+## Change Log
+
+### v2.4.0 (2015/11/16 15:16 +00:00)
+- [24f6474](https://github.com/FGRibreau/check-build/commit/24f6474a687d5b65fe0603628e7d2080ee74a0af) Release v2.4.0. (@FGRibreau)
+- [7aea3b6](https://github.com/FGRibreau/check-build/commit/7aea3b607fe86e76908351a90767700aa247467c) fix(package): added changelog (@FGRibreau)
+- [#53](https://github.com/FGRibreau/check-build/pull/53) Merge pull request #53 from jcare44/master (@jcare44)
+- [b1b7f54](https://github.com/FGRibreau/check-build/commit/b1b7f54c56c0c52ec4e1513c6548e926a22842c7) fix nsp args handler (@jcare44)
+- [e201390](https://github.com/FGRibreau/check-build/commit/e201390067165893ae6128b9c2360a8acb50307f) Handle nsp arguments in config file (@jcare44)
+
+### v2.3.0 (2015/11/03 18:11 +00:00)
+- [ac47a2f](https://github.com/FGRibreau/check-build/commit/ac47a2fd5989636ec5c418e080cd9a2d33d0e130) Release v2.3.0. (@FGRibreau)
+- [#52](https://github.com/FGRibreau/check-build/pull/52) Merge pull request #52 from jcare44/master (@jcare44)
+- [19072ea](https://github.com/FGRibreau/check-build/commit/19072ea654ced8e25878aaa4054d3c741058b7fe) Use nsp v2 (@jcare44)
+
+### v2.2.1 (2015/09/22 13:00 +00:00)
+- [c410147](https://github.com/FGRibreau/check-build/commit/c410147356a9293a4f785418c1821d141258bb58) Release v2.2.1. (@FGRibreau)
+- [a733dfb](https://github.com/FGRibreau/check-build/commit/a733dfbe82d569f00b123b9f26888ed34e141f1c) fix(eslint) (@FGRibreau)
+- [5e81271](https://github.com/FGRibreau/check-build/commit/5e81271cad104efe307147d0fb16e83ee50d3284) Update README.md (@FGRibreau)
+- [5d5ec64](https://github.com/FGRibreau/check-build/commit/5d5ec643493af5e7416ab7885354eb0b65dc3885) docs(readme): added JSXhint (@FGRibreau)
+- [75a54a9](https://github.com/FGRibreau/check-build/commit/75a54a9b9edb50afba9bf19e4918aa61232cfdf9) docs(changelog) (@FGRibreau)
+
+### v2.2.0 (2015/08/18 14:19 +00:00)
+- [0fc7787](https://github.com/FGRibreau/check-build/commit/0fc7787cd890bdc674f38ab1c4833b97bce34e95) Release v2.2.0. (@FGRibreau)
+- [#47](https://github.com/FGRibreau/check-build/pull/47) Merge pull request #47 from FGRibreau/eslint (@FGRibreau)
+- [5e9b247](https://github.com/FGRibreau/check-build/commit/5e9b24732e89f278d2b6526166b4e586a8b412bf) fix(eslint): disable no-console (@FGRibreau)
+- [315b712](https://github.com/FGRibreau/check-build/commit/315b71293a8106953b66213e999b81fb84205619) fix(eslint) (@FGRibreau)
+- [06fdf3f](https://github.com/FGRibreau/check-build/commit/06fdf3f2d236d452deb874a33e3f765c5d59fd96) fix(jshint) (@FGRibreau)
+- [5d09f21](https://github.com/FGRibreau/check-build/commit/5d09f21b457fa5c4a33b819a4d162183d7739474) feat(eslint): support for ESLint (jsxhint is deprecated), fixes #21 (@FGRibreau)
+- [3c38016](https://github.com/FGRibreau/check-build/commit/3c380165c0d2fc02d0f5ae9ae8cec1ad7b6d89e6) docs(changelog) (@FGRibreau)
+
+### v2.1.0 (2015/08/10 14:26 +00:00)
+- [286a35e](https://github.com/FGRibreau/check-build/commit/286a35e33dac73352dd97e76453b47b1030abb6c) Release v2.1.0. (@FGRibreau)
+- [aebe6e3](https://github.com/FGRibreau/check-build/commit/aebe6e3a7a69db2b66f18089e2445bec1c6ac4c3) fix(package): rollback versioning (@FGRibreau)
+- [#45](https://github.com/FGRibreau/check-build/pull/45) Merge pull request #45 from FGRibreau/plato-fix (@FGRibreau)
+- [aec3a3f](https://github.com/FGRibreau/check-build/commit/aec3a3ff4e29d21d3075d3fc4340edfcdcbb6bf0) docs(readme) (@FGRibreau)
+- [5107054](https://github.com/FGRibreau/check-build/commit/5107054250859cc2512b7db018bc03646b450978) refactor(plato): remove nested ifs and for..in, simplify code overall (@FGRibreau)
+- [86ce590](https://github.com/FGRibreau/check-build/commit/86ce59053c81755ad5c3a05e2c7e931024ad65a6) feat(plato): fail if maintainability is undefined (@FGRibreau)
+- [2d87bf7](https://github.com/FGRibreau/check-build/commit/2d87bf760d86f9c84fa918d9baf4771dc56ac0b5) style(plato) (@FGRibreau)
+- [#44](https://github.com/FGRibreau/check-build/pull/44) Merge pull request #44 from valeriansaliou/master (@valeriansaliou)
+- [3891c80](https://github.com/FGRibreau/check-build/commit/3891c803366e1ed95d155ce6b54af0b61532f642) Add david success message (@valeriansaliou)
+- [697a257](https://github.com/FGRibreau/check-build/commit/697a257b38cb1d28634ad4cbd17b219383c03e8b) Bump up to v2.1.1 (@valeriansaliou)
+- [29a8067](https://github.com/FGRibreau/check-build/commit/29a80678a946357c1b15b3ab5a9dd198bbb93e97) Enhance plato checking (@valeriansaliou)
+- [#43](https://github.com/FGRibreau/check-build/pull/43) Merge pull request #43 from FGRibreau/julien-plato (@FGRibreau)
+- [3504965](https://github.com/FGRibreau/check-build/commit/35049653a46c051d2582659550fa52c4e5a4805e) remove helper (@julien-leroy)
+- [6181545](https://github.com/FGRibreau/check-build/commit/61815455d94cc47c5e2ca494fd827e336ab55989) It works + cleaner code + remove helpers (@julien-leroy)
+- [e47d69a](https://github.com/FGRibreau/check-build/commit/e47d69aec3611bd1ca4a8981a9e599d774c30989) remove plato help doc and clean plato interface (@julien-leroy)
+- [c133696](https://github.com/FGRibreau/check-build/commit/c133696532b18fc338202b8f1b809b897c0d38f5) add plato and create palto interface. ready to test (@julien-leroy)
+- [f4a11a4](https://github.com/FGRibreau/check-build/commit/f4a11a4e1f0246265158775a46803ee947466756) add json plato response exemple to docs (@julien-leroy)
+- [#42](https://github.com/FGRibreau/check-build/pull/42) Merge pull request #42 from valeriansaliou/master (@valeriansaliou)
+- [357119b](https://github.com/FGRibreau/check-build/commit/357119b3ac2f1dada91e9e83d3215f185d2d2565) Plato working with latest check-build as of today (@valeriansaliou)
+- [cf04943](https://github.com/FGRibreau/check-build/commit/cf049436ecccf1e4dda3ec9087c099977b4c16de) david defaults (@valeriansaliou)
+- [20cda68](https://github.com/FGRibreau/check-build/commit/20cda68de255428609bc4259731723dc710b9096) Makes David less introverted (@valeriansaliou)
+- [4909ba6](https://github.com/FGRibreau/check-build/commit/4909ba62e90d0226a3d506d42ab8637cd67b168a) docs(changelog) (@FGRibreau)
+
+### v2.0.0 (2015/08/07 18:34 +00:00)
+- [332cdb3](https://github.com/FGRibreau/check-build/commit/332cdb3453dabbeb65820da75972cf8d1cff9663) Release v2.0.0. (@FGRibreau)
+- [4c5f4e8](https://github.com/FGRibreau/check-build/commit/4c5f4e87347be0453519110308b0e90bfb6d700e) refactor(check-build): refactored and should by name, fixes #40, fixes #41 (@FGRibreau)
+- [905bfed](https://github.com/FGRibreau/check-build/commit/905bfedc6caaecab55f722945cd261dc30225b2e) feat(debug): `DEBUG=check-build check-build` now makes check-build run in debug mode, fixes #39 (@FGRibreau)
+- [640438c](https://github.com/FGRibreau/check-build/commit/640438c73ed7aefb9011ebf16258b70e2f3b628c) docs(changelog) (@FGRibreau)
+
+### v1.7.1 (2015/08/05 08:27 +00:00)
+- [e592d23](https://github.com/FGRibreau/check-build/commit/e592d236bfa1234e75a75c499521354a95495c51) Release v1.7.1. (@FGRibreau)
+- [c55a9c8](https://github.com/FGRibreau/check-build/commit/c55a9c80c56d4aa73b395b8ef247b3e11e9bb5b6) Update README.md (@FGRibreau)
+- [#36](https://github.com/FGRibreau/check-build/pull/36) Merge pull request #36 from FGRibreau/fix-url (@FGRibreau)
+- [#35](https://github.com/FGRibreau/check-build/pull/35) Merge pull request #35 from FGRibreau/jshint-url-improvement (@FGRibreau)
+- [6a9f6c6](https://github.com/FGRibreau/check-build/commit/6a9f6c659680ad6ca6491f7f5f3283379efb1b37) fix(jshint): fixes #33 (@FGRibreau)
+- [2cfa68c](https://github.com/FGRibreau/check-build/commit/2cfa68c68751057b8657dd0110706d7df04ad5d3) fix(jshint): fixes #34 (@FGRibreau)
+- [afd1e69](https://github.com/FGRibreau/check-build/commit/afd1e698b074ba7d328767942838b5a9435fa65b) refactor(jshint): remove unused packages (@FGRibreau)
+- [cd75762](https://github.com/FGRibreau/check-build/commit/cd75762ec3a06519a021bd708b7e3c1b0506dfe2) docs(changelog) (@FGRibreau)
+
+### v1.7.0 (2015/08/04 13:39 +00:00)
+- [b4c49f1](https://github.com/FGRibreau/check-build/commit/b4c49f1554b668e2fb8fd1f9426f1f0c5d5642b2) Release v1.7.0. (@FGRibreau)
+- [#32](https://github.com/FGRibreau/check-build/pull/32) Merge pull request #32 from FGRibreau/jshint-url (@FGRibreau)
+- [1540818](https://github.com/FGRibreau/check-build/commit/154081809af73ff3d58c04c8a62855d69be29cdd) fix(jshint): use `url:` (@FGRibreau)
+- [#31](https://github.com/FGRibreau/check-build/pull/31) Merge pull request #31 from FGRibreau/jshint-url (@FGRibreau)
+- [930429f](https://github.com/FGRibreau/check-build/commit/930429f951c031aa6c4ac4dec5afd467110a09ef) feat(jshint): download a distant .jshintrc if `url:` is specified (@FGRibreau)
+
+### v1.6.1 (2015/06/25 07:45 +00:00)
+- [482965a](https://github.com/FGRibreau/check-build/commit/482965aecfecde90aea6ccc3c51ad32b3a2deedf) Release v1.6.1. (@FGRibreau)
+- [d53b291](https://github.com/FGRibreau/check-build/commit/d53b2911f8232e4df6722430912219370410ba9e) fix(buddyjs): fixes #30 (@FGRibreau)
+
+### v1.6.0 (2015/06/24 21:03 +00:00)
+- [799e1e5](https://github.com/FGRibreau/check-build/commit/799e1e5a3291f67c5ef79871b7cdcde150fb1b54) Release v1.6.0. (@FGRibreau)
+- [de1107c](https://github.com/FGRibreau/check-build/commit/de1107c4a498f824271cf727afd6917411e498af) docs(readme): add jsxhint (@FGRibreau)
+- [822c9ad](https://github.com/FGRibreau/check-build/commit/822c9ad740ae3292ba51c8646aa9ab593db60ea8) feat(package): upgrade deps (@FGRibreau)
+- [#29](https://github.com/FGRibreau/check-build/pull/29) Merge pull request #29 from FGRibreau/jsxhint-support (@FGRibreau)
+- [ccb23f1](https://github.com/FGRibreau/check-build/commit/ccb23f1e19a489944db461add173ad8987e19eb6) feat(jsxhint): added support for jsxhint, fixes #28 (@FGRibreau)
+- [ce41595](https://github.com/FGRibreau/check-build/commit/ce415954c29753fbba55c00f794e10761e5fee0b) feat(docker): add docker support (@FGRibreau)
+- [f1621a1](https://github.com/FGRibreau/check-build/commit/f1621a16138a5f842b951c40bb4dbe7e75c708f0) doc(changelog): updated changelog (@FGRibreau)
+
+### v1.5.0 (2015/03/31 15:21 +00:00)
+- [22206d7](https://github.com/FGRibreau/check-build/commit/22206d7546eaa6a1d125071bf17784eb363100ca) Release v1.5.0. (@FGRibreau)
+- [0868c21](https://github.com/FGRibreau/check-build/commit/0868c21c8d5b881b2ddd87c484d3c4ab4901fe0f) feat(jscs): Instead of putting a .jscrc inside each of your project with check-build you can specify an URL.  That URL will be downloaded each time check-build is run and its content will be saved inside check-build command current directory fixes #25 (@FGRibreau)
+
+### v1.4.1 (2015/02/18 21:58 +00:00)
+- [2cd3c45](https://github.com/FGRibreau/check-build/commit/2cd3c451bd34a0273329bb0b50b33458a9b0d360) Release v1.4.1. (@FGRibreau)
+- [5702fd6](https://github.com/FGRibreau/check-build/commit/5702fd698787376ee790356ebfa6ea3d02b3ca7a) fix(jsinspect): JsInspect upgrade check-build interface (@FGRibreau)
+
+### v1.4.0 (2015/02/18 21:52 +00:00)
+- [8ec1c89](https://github.com/FGRibreau/check-build/commit/8ec1c89b83bb40bbb57a0134bec9bccc25346f91) Release v1.4.0. (@FGRibreau)
+- [5c8b943](https://github.com/FGRibreau/check-build/commit/5c8b943a0e03b53852fdf04b3f5494a2c8958450) feat(david): check-build now supports an `ignore` option for david. (@FGRibreau)
+- [8e3a3bd](https://github.com/FGRibreau/check-build/commit/8e3a3bdb7a86c116799c96cfa4f7c2bad7cae0d3) Update README.md (@FGRibreau)
+- [80d63d6](https://github.com/FGRibreau/check-build/commit/80d63d60e611e6155e8d201d8a28ca85483b7d45) Update README.md (@FGRibreau)
+- [03363c0](https://github.com/FGRibreau/check-build/commit/03363c011f1a9d9b81f01e5a63b4829339fdcb49) Update README.md (@FGRibreau)
+
+### v1.3.3 (2015/02/01 19:49 +00:00)
+- [d4c569d](https://github.com/FGRibreau/check-build/commit/d4c569d0bb7ca1cb0cac6462fcb56e37416d1e22) Release v1.3.3. (@FGRibreau)
+- [814a24d](https://github.com/FGRibreau/check-build/commit/814a24dd8d93846804a345c5327b3bff96626f1f) chore(history) (@FGRibreau)
+- [#18](https://github.com/FGRibreau/check-build/pull/18) Merge pull request #18 from seegno-forks/support/update-dependencies (@seegno-forks)
+- [71f2d47](https://github.com/FGRibreau/check-build/commit/71f2d47ce64e7f9b0e428a8364c89c39e1c2fda7) Update dependencies (@ruimarinho)
+
+### v1.3.2 (2015/01/24 11:26 +00:00)
+- [9220e26](https://github.com/FGRibreau/check-build/commit/9220e26163e17c462bf4aeae8c0409c6cb4a34f3) Release v1.3.2. (@FGRibreau)
+- [ddb2adc](https://github.com/FGRibreau/check-build/commit/ddb2adc6cd89a56a8e007ce84fc117efbb763693) chore(readme): fix david integration (@FGRibreau)
+- [b0bc25b](https://github.com/FGRibreau/check-build/commit/b0bc25bc942ac1dca0866a63d4b01a1061350d11) fix(david): skip warnings (@FGRibreau)
+- [5c48da5](https://github.com/FGRibreau/check-build/commit/5c48da58edf5f01c0b100fc2a653d43d5ff5e2b3) Release v1.3.1. (@FGRibreau)
+- [da95ff6](https://github.com/FGRibreau/check-build/commit/da95ff60775751b878aacb2f291b4352e1f55dfb) chore(history) (@FGRibreau)
+
+### v1.3.1 (2015/01/21 14:53 +00:00)
+- [d63a73c](https://github.com/FGRibreau/check-build/commit/d63a73ce9cd2a7e20f7d685062580acbf6487203) chore(history) (@FGRibreau)
+- [9cad542](https://github.com/FGRibreau/check-build/commit/9cad542394d5c311bc0b028b22ab6c0b83637590) fix(package): upgrade david, buddyjs, fixmyjs, nsp and jsinspect (@FGRibreau)
+- [8de7f5f](https://github.com/FGRibreau/check-build/commit/8de7f5fd211661178eb1ac211abb7beebbc9ddba) chore(package): dot files (@FGRibreau)
+- [#17](https://github.com/FGRibreau/check-build/pull/17) Merge pull request #17 from seegno/enhancement/use-json5 (@seegno)
+- [961e299](https://github.com/FGRibreau/check-build/commit/961e299714397d19aab393c8c9925244379422e2) Add support for JSON5 (@ruimarinho)
+- [#14](https://github.com/FGRibreau/check-build/pull/14) Merge pull request #14 from MattiSG/patch-2 (@MattiSG)
+- [#13](https://github.com/FGRibreau/check-build/pull/13) Merge pull request #13 from MattiSG/patch-1 (@MattiSG)
+- [89db0a4](https://github.com/FGRibreau/check-build/commit/89db0a423941c5e037987f2a396cdc7383124602) Remove syntax errors from README example (@MattiSG)
+- [136725a](https://github.com/FGRibreau/check-build/commit/136725a1e13f8e340b383a8c5c651a23c1e71c4a) Remove outdated todo (@MattiSG)
+
+### v1.3.0 (2014/11/18 19:10 +00:00)
+- [9bb1e5c](https://github.com/FGRibreau/check-build/commit/9bb1e5cd4d93e0526c675293915e42719b317a62) Release v1.3.0. (@FGRibreau)
+- [0da580a](https://github.com/FGRibreau/check-build/commit/0da580a22a2cbe333e73c0a81c735ac2f785cb70) 1.3.0 (@FGRibreau)
+- [#12](https://github.com/FGRibreau/check-build/pull/12) Merge pull request #12 from seegno/enhancement/fix-jscs-integration (@seegno)
+- [#11](https://github.com/FGRibreau/check-build/pull/11) Merge pull request #11 from seegno/enhancement/pass-options-to-david (@seegno)
+- [9af5259](https://github.com/FGRibreau/check-build/commit/9af525970ef3684391a9c99997a6df852b2ca659) Improve message output readability (@ruimarinho)
+- [e46ed04](https://github.com/FGRibreau/check-build/commit/e46ed04a3c82ca74633c9d2417dc71157c946b09) Fix integration with jscs (@ruimarinho)
+- [2758575](https://github.com/FGRibreau/check-build/commit/2758575d42ef52cf1256f68619abbacf1e1bf0a6) Add options configuration to david (@ruimarinho)
+
+### v1.2.0 (2014/11/15 13:16 +00:00)
+- [1b6897e](https://github.com/FGRibreau/check-build/commit/1b6897e6f931f865dc9dafba0a46740411f4b125) Release v1.2.0. (@FGRibreau)
+- [f643af6](https://github.com/FGRibreau/check-build/commit/f643af60c095bc46885a8ca54846150e423d17e0) Add `David` - Check that your project dependencies are up to date, fixes #7 (@FGRibreau)
+
+### v1.1.0 (2014/11/15 11:25 +00:00)
+- [2d365ca](https://github.com/FGRibreau/check-build/commit/2d365ca2588924b965142472036bcdef5cb2c247) Release v1.1.0. (@FGRibreau)
+- [19a15b5](https://github.com/FGRibreau/check-build/commit/19a15b5210f310c9c35e6e595128f1327a6ac430) Add `continueOnError` and `allowFailures` configuration options to `.checkbuild`, fixes #5. (@FGRibreau)
+- [63f8ea5](https://github.com/FGRibreau/check-build/commit/63f8ea50b53643bd86f9b792a887fc775f769461) merge (@FGRibreau)
+- [c61385c](https://github.com/FGRibreau/check-build/commit/c61385cbede3bd3580b088057477965fe3f2664c) upgrade jsinspect to 0.2.0 (@FGRibreau)
+- [26245cf](https://github.com/FGRibreau/check-build/commit/26245cf897a829cc8fb0153340891cbe1a71e4f2) Update README.md (@FGRibreau)
+
+### v1.0.6 (2014/10/21 18:18 +00:00)
+- [1535105](https://github.com/FGRibreau/check-build/commit/1535105191fd17b581fc7dcaacdd11f51c46baf5) Release v1.0.6. (@FGRibreau)
+- [764cceb](https://github.com/FGRibreau/check-build/commit/764cceb0d04e49e927c2f3b11da48a7375394102) Merge branch 'master' of github.com:FGRibreau/check-build (@FGRibreau)
+- [2f987f6](https://github.com/FGRibreau/check-build/commit/2f987f69c7f5d7427c7d5a418ed02d15f53e164d) uprade check-build (@FGRibreau)
+- [cabc62c](https://github.com/FGRibreau/check-build/commit/cabc62c4fd49d3ee6fa1cd660c6171fb02e0ce60) Update README.md (@FGRibreau)
+
+### v1.0.5 (2014/10/20 21:27 +00:00)
+- [a055876](https://github.com/FGRibreau/check-build/commit/a055876b60101ade07f7aeaf7f28543e4d53f668) Release v1.0.5. (@FGRibreau)
+- [92b9aa5](https://github.com/FGRibreau/check-build/commit/92b9aa505b142b7d866b79fe1dfcca9984271532) history (@FGRibreau)
+- [f391d99](https://github.com/FGRibreau/check-build/commit/f391d999f2aa000fb9a35a361f2bd1d670a0c1be) history (@FGRibreau)
+- [#2](https://github.com/FGRibreau/check-build/pull/2) Merge pull request #2 from PSeitz/master (@PSeitz)
+- [792c316](https://github.com/FGRibreau/check-build/commit/792c316ea9448be04d56533481b839c4c496ad66) Update check-build.js (@PSeitz)
+- [50172dc](https://github.com/FGRibreau/check-build/commit/50172dc98c851d0bb67e101e9ed0e11dc7858132) Update jshint.js (@PSeitz)
+- [374f6c0](https://github.com/FGRibreau/check-build/commit/374f6c0d83f6889efffab466426018eb34e3cf94) Merge branch 'master' of github.com:FGRibreau/check-build (@FGRibreau)
+- [952befa](https://github.com/FGRibreau/check-build/commit/952befa7a108e68749f152a10eed430fc185d47e) add gif to repository (@FGRibreau)
+- [279cb40](https://github.com/FGRibreau/check-build/commit/279cb40d0d5863586b59103383b704bba5dfa45b) Update README.md (@FGRibreau)
+- [#1](https://github.com/FGRibreau/check-build/pull/1) Merge pull request #1 from brycefisher/patch-1 (@brycefisher)
+- [551f78e](https://github.com/FGRibreau/check-build/commit/551f78e51f5bf11c9a1ab1635b0fd5b7cb2a23e6) Update README.md (@brycefisher)
+
+### v1.0.4 (2014/10/20 11:57 +00:00)
+- [6169bb6](https://github.com/FGRibreau/check-build/commit/6169bb6cfd7023aedb6a3140014ea38b0abbeab2) Release v1.0.4. (@FGRibreau)
+- [d281166](https://github.com/FGRibreau/check-build/commit/d281166be9f09e773d6399e48aa58b2489798c5c) history (@FGRibreau)
+- [4940ea0](https://github.com/FGRibreau/check-build/commit/4940ea03cdb33392cc57b4e7fea79c9a119d96be) jsinspect now exit when matches are found (@FGRibreau)
+- [0508c36](https://github.com/FGRibreau/check-build/commit/0508c36af32b2461bf240a8275745aba8a1c9532) Merge branch 'master' of github.com:FGRibreau/check-build (@FGRibreau)
+
+### v1.0.3 (2014/10/20 10:56 +00:00)
+- [bb4cc1b](https://github.com/FGRibreau/check-build/commit/bb4cc1b241bb0dd464d85cc63d40c6acd6c7c9f3) Release v1.0.3. (@FGRibreau)
+- [cf78281](https://github.com/FGRibreau/check-build/commit/cf782818a3b27fd130568cc064b1b24b793aac76) fix checkbuild, don't use buddyjs by default (@FGRibreau)
+
+### v1.0.2 (2014/10/20 10:45 +00:00)
+- [91ed62a](https://github.com/FGRibreau/check-build/commit/91ed62ae6603a7bf711463dbe63e3fbf1314aa99) Release v1.0.2. (@FGRibreau)
+- [c17b5ea](https://github.com/FGRibreau/check-build/commit/c17b5ea696ca07409d86318d26f5483df2140e50) fix default .checkbuild (@FGRibreau)
+- [62d5363](https://github.com/FGRibreau/check-build/commit/62d53636d42592d21e202cdca0e3d410efb2d4be) Update README.md (@FGRibreau)
+- [f25a0eb](https://github.com/FGRibreau/check-build/commit/f25a0eb7b66b398802f1ded2fa884f11f41cdecd) readme (@FGRibreau)
+- [853a4e6](https://github.com/FGRibreau/check-build/commit/853a4e625b778b7eca284a7663976662e19e480b) readme (@FGRibreau)
+- [efa6a3b](https://github.com/FGRibreau/check-build/commit/efa6a3b5b88a71b43ce98f1bc8aec33ca840822e) readme (@FGRibreau)
+- [ca3d9c7](https://github.com/FGRibreau/check-build/commit/ca3d9c748c57fc5ebf436c50971799638cb76699) readme (@FGRibreau)
+
+### v1.0.1 (2014/10/19 15:18 +00:00)
+- [0d3ca5d](https://github.com/FGRibreau/check-build/commit/0d3ca5d8439d2e27bf3d277d1b95ba0e1223b685) Release v1.0.1. (@FGRibreau)
+- [92851bb](https://github.com/FGRibreau/check-build/commit/92851bbfe4bd2b5631c2fabb3aa777ffe4faf2eb) history (@FGRibreau)
+- [8b27bba](https://github.com/FGRibreau/check-build/commit/8b27bba0deebe88f0e12f9a65242557b12cd0ea2) updated nsp (@FGRibreau)
+- [2a55f41](https://github.com/FGRibreau/check-build/commit/2a55f412b7e9ea948831ffb001aae7dba196f835) readme (@FGRibreau)
+- [0027678](https://github.com/FGRibreau/check-build/commit/0027678078f2377fcd1558b66e321fead2af53f5) readme (@FGRibreau)
+- [73fd94f](https://github.com/FGRibreau/check-build/commit/73fd94f25240da16aedea19f4b5c266526cbd3c5) readme (@FGRibreau)
+- [e434765](https://github.com/FGRibreau/check-build/commit/e4347654e1af7f31749fef03afc5fb5b983b3b6a) readme (@FGRibreau)
+- [5e40002](https://github.com/FGRibreau/check-build/commit/5e400029c2dd7aeefcab0ccd68e69ff234de4357) readme (@FGRibreau)
+- [8e706d0](https://github.com/FGRibreau/check-build/commit/8e706d020cd0d9103e239d986202dbfb45e1de7f) readme (@FGRibreau)
+- [40e0530](https://github.com/FGRibreau/check-build/commit/40e0530bce873ee55c9e1566166b4d690e4b2c45) readme (@FGRibreau)
+- [1af6c07](https://github.com/FGRibreau/check-build/commit/1af6c075b5953f72fae16378a5fbf97838f5b386) readme (@FGRibreau)
+- [15df9e5](https://github.com/FGRibreau/check-build/commit/15df9e579f2befb87c5d56d0bed172f5b57045f0) readme (@FGRibreau)
+- [c67e119](https://github.com/FGRibreau/check-build/commit/c67e119ef467a81b6b0d48c105e5a8ba35aa141a) readme (@FGRibreau)
+- [5f26e9c](https://github.com/FGRibreau/check-build/commit/5f26e9c1601e208f538a02d0ff3262a76c6590d3) readme (@FGRibreau)
+- [7ea4bfb](https://github.com/FGRibreau/check-build/commit/7ea4bfb2a8902ec8508dd15c760bf6d9d082b567) readme (@FGRibreau)
+- [7a2db3e](https://github.com/FGRibreau/check-build/commit/7a2db3e5f7529948156809f9d5681016c0abcfbb) readme (@FGRibreau)
+- [074427f](https://github.com/FGRibreau/check-build/commit/074427f6361ee394aa33e3a04bbff6507b38bbbc) readme (@FGRibreau)
+- [a5a7a38](https://github.com/FGRibreau/check-build/commit/a5a7a38534139466709ece066041f8615239c9cb) readme (@FGRibreau)
+- [d1e18d2](https://github.com/FGRibreau/check-build/commit/d1e18d24184f95ea2dc3c6ab7680a470f6f4c2da) . (@FGRibreau)
+- [4b5c9e4](https://github.com/FGRibreau/check-build/commit/4b5c9e49ed5232d6ce37b613ad5b10587e70ea72) Initial commit (@FGRibreau)
