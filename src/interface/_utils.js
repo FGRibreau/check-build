@@ -5,6 +5,7 @@ var path = require('path');
 var url = require('url');
 var fs = require('fs');
 var _ = require('lodash');
+var async = require('async');
 var shjs = require('shelljs');
 var JSON5 = require('json5');
 
@@ -16,7 +17,7 @@ module.exports = function (debug) {
      * @param  {string|falsy} url
      * @param  {function} f(err)
      */
-    downloadDistantOrLoad: function (fileUrl, f) {
+    downloadDistantOrLoad: function downloadDistantOrLoad(fileUrl, f) {
       if (!fileUrl || !_.isString(fileUrl)) {
         return f();
       }
@@ -42,29 +43,52 @@ module.exports = function (debug) {
       });
     },
 
-    loadCheckbuildConf: function loadCheckbuildConf(filePath) {
+    /**
+     * Load the proper checkbuild conf (using extends & urls)
+     * @param  {string} filePath  Conf path
+     * @param  {function} f       Callback:  f(err, conf)
+     */
+    loadCheckbuildConf: function loadCheckbuildConf(filePath, f) {
       var conf;
       try {
         conf = shjs.cat(filePath);
       } catch (err) {
-        console.error('Could not open `%s`', filePath, err);
-        return process.exit(1);
+        return f(['Could not open `%s`', filePath, err]);
       }
 
       try {
         conf = JSON5.parse(conf);
       } catch (err) {
-        console.error('Invalid json content inside `%s`', filePath, err);
-        return process.exit(1);
+        return f(['Invalid json content inside `%s`', filePath, err]);
       }
 
-      if (_.isArray(conf.extends)) {
-        conf = _.reduce(conf.extends, function(res, filePath) {
-          return _.defaultsDeep(res, loadCheckbuildConf(filePath));
-        }, conf);
+      /**
+       * Load and apply extends
+       */
+      function extendConf(conf, f) {
+        if (_.isArray(conf.extends)) {
+          async.reduce(conf.extends, conf, function(res, filePath, cb) {
+            loadCheckbuildConf(filePath, function(err, conf) {
+              cb(err, _.defaultsDeep(res, conf));
+            });
+          }, f);
+        } else {
+          f(null, conf);
+        }
       }
 
-      return conf;
+      if (_.isArray(conf.urls)) {
+        // Download distant files
+        async.each(conf.urls, downloadDistantOrLoad, function(err) {
+          if (err) {
+            return f(['An error occured when loading distant files', err]);
+          }
+
+          extendConf(conf, f);
+        });
+      } else {
+        extendConf(conf, f);
+      }
     }
   };
 };

@@ -22,15 +22,19 @@ module.exports = function (debug) {
 
   debug('using %s', checkbuildFile);
 
-  checkbuildOptions = utils.loadCheckbuildConf(checkbuildFile);
-
-  checkBuild(checkbuildOptions, function (errors) {
-    if (errors > 0 && !checkbuildOptions.checkbuild.allowFailures) {
-      console.error('%s module(s) failed, exiting.', errors);
-      return process.exit(1);
+  utils.loadCheckbuildConf(checkbuildFile, function(err, checkbuildOptions) {
+    if (err) {
+      console.error.apply(this, err);
     }
 
-    console.log('Done !');
-    process.exit(0);
+    checkBuild(checkbuildOptions, function (errors) {
+      if (errors > 0 && !checkbuildOptions.checkbuild.allowFailures) {
+        console.error('%s module(s) failed, exiting.', errors);
+        return process.exit(1);
+      }
+
+      console.log('Done !');
+      process.exit(0);
+    });
   });
 };
