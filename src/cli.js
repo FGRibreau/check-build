@@ -5,8 +5,8 @@ var path = require('path');
 var shjs = require('shelljs');
 
 module.exports = function (debug) {
-  var checkBuild = require('./checkBuild')(debug);
   var utils = require('./interface/_utils')(debug);
+  var checkBuild = require('./checkBuild')(debug, utils);
 
   var checkbuildContent, checkbuildOptions;
 

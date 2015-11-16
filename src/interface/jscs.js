@@ -14,7 +14,7 @@ module.exports = function (debug) {
     options = _.assign({
       args: [],
       color: true,
-      config: null,
+      config: path.join(process.cwd(), '.jscsrc'),
       esnext: false
     }, options);
 
@@ -29,67 +29,48 @@ module.exports = function (debug) {
     debug('loading config %s', configPath);
     config = configFile.load(configPath);
 
-    // @todo use `utils.downloadDistantOrLoad` (not backward compatible with current usage)
     if (!config) {
       config = configFile.load(path.join(__dirname, '../../defaults/.jscsrc'));
     }
 
-    if (options.url) {
-      debug('loading URL %s', options.url);
-      request({
-        url: options.url,
-        json: true
-      }, function (err, resp, body) {
-        if (err) {
-          return f(err);
-        }
-        fs.writeFileSync(path.resolve(process.cwd(), '.jscsrc'), JSON.stringify(body, null, 2));
-        onConfigLoaded(body);
+    if (!config) {
+      return f(new Error('Configuration source ' + configPath + ' was not found and default configuration failed to load'));
+    }
+
+    if (options.maxErrors) {
+      config.maxErrors = Number(options.maxErrors);
+    }
+
+    if (options.reporter) {
+      reporterPath = path.resolve(process.cwd(), options.reporter);
+
+      if (!fs.existsSync(reporterPath)) {
+        reporterPath = 'jscs/lib/reporters/' + options.reporter;
+      }
+    }
+
+    try {
+      reporter = require(reporterPath);
+    } catch (e) {
+      return f(new Error('Reporter ' + reporterPath + 'doesn\'t exist.'));
+    }
+
+    checker.registerDefaultRules();
+    checker.configure(config);
+    bluebird.all(args.map(checker.checkPath, checker)).then(function (results) {
+      var errorsCollection = [].concat.apply([], results);
+
+      reporter(errorsCollection);
+
+      var hasErrors = errorsCollection.some(function (errors) {
+        return !errors.isEmpty();
       });
-    } else {
-      onConfigLoaded(config);
-    }
 
-    function onConfigLoaded(config) {
-      if (!config) {
-        return f(new Error('Configuration source ' + configPath + ' was not found.'));
+      if (hasErrors) {
+        return f(new Error('Found issues with code style'));
       }
 
-      if (options.maxErrors) {
-        config.maxErrors = Number(options.maxErrors);
-      }
-
-      if (options.reporter) {
-        reporterPath = path.resolve(process.cwd(), options.reporter);
-
-        if (!fs.existsSync(reporterPath)) {
-          reporterPath = 'jscs/lib/reporters/' + options.reporter;
-        }
-      }
-
-      try {
-        reporter = require(reporterPath);
-      } catch (e) {
-        return f(new Error('Reporter ' + reporterPath + 'doesn\'t exist.'));
-      }
-
-      checker.registerDefaultRules();
-      checker.configure(config);
-      bluebird.all(args.map(checker.checkPath, checker)).then(function (results) {
-        var errorsCollection = [].concat.apply([], results);
-
-        reporter(errorsCollection);
-
-        var hasErrors = errorsCollection.some(function (errors) {
-          return !errors.isEmpty();
-        });
-
-        if (hasErrors) {
-          return f(new Error('Found issues with code style'));
-        }
-
-        return f();
-      }, f);
-    }
+      return f();
+    }, f);
   };
 };

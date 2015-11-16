@@ -2,9 +2,8 @@
 
 var _ = require('lodash');
 var async = require('async');
-var utils = require('./interface/_utils');
 
-module.exports = function (debug) {
+module.exports = function (debug, utils) {
 
   /**
    * [checkBuild description]
@@ -55,6 +54,7 @@ module.exports = function (debug) {
 
           errors++;
         }
+        console.log();
 
         f(null, errors);
       }, checkbuildOptions);
