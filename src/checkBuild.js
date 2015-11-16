@@ -1,6 +1,8 @@
 'use strict';
 
+var _ = require('lodash');
 var async = require('async');
+var utils = require('./interface/_utils');
 
 module.exports = function (debug) {
 
@@ -11,7 +13,20 @@ module.exports = function (debug) {
    */
   return function checkBuild(checkbuildOptions, f) {
 
-    async.reduce(checkbuildOptions.checkbuild.enable, 0, checkModuleInterface, done);
+    async.reduce(checkbuildOptions.checkbuild.enable, 0, function(errors, name, f) {
+      // if url helper used, load file
+      if(checkbuildOptions[name] && _.isString(checkbuildOptions[name].url)) {
+        utils.downloadDistantOrLoad(checkbuildOptions[name].url, function(err) {
+          if (err) {
+            return console.error('Failed to load %s', checkbuildOptions[name].url, err);
+          }
+
+          checkModuleInterface(errors, name, f);
+        });
+      } else {
+        checkModuleInterface(errors, name, f);
+      }
+    }, done);
 
     function checkModuleInterface(errors, name, f) {
       var module;
@@ -40,8 +55,6 @@ module.exports = function (debug) {
 
           errors++;
         }
-
-        console.log();
 
         f(null, errors);
       }, checkbuildOptions);
