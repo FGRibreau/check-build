@@ -153,7 +153,9 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
     "maintainability": 75.00
   },
 
-  "nsp": {},
+  "nsp": {
+    "args": []
+  },
 
   "david": {
     "dev": false,
