@@ -7,7 +7,7 @@ module.exports = function (debug) {
 
   return function (options, f) {
     var cmd = ['node', p.resolve(__dirname, '../../node_modules/nsp/bin/nsp'), 'check'];
-    cmd = cmd.concat(options.args).join(' ');
+    cmd = cmd.concat(options.args || []).join(' ');
 
     debug('running %s', cmd);
     var ret = shjs.exec(cmd).code;
