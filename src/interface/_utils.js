@@ -5,6 +5,8 @@ var path = require('path');
 var url = require('url');
 var fs = require('fs');
 var _ = require('lodash');
+var shjs = require('shelljs');
+var JSON5 = require('json5');
 
 module.exports = function (debug) {
 
@@ -38,6 +40,31 @@ module.exports = function (debug) {
 
         f();
       });
+    },
+
+    loadCheckbuildConf: function loadCheckbuildConf(filePath) {
+      var conf;
+      try {
+        conf = shjs.cat(filePath);
+      } catch (err) {
+        console.error('Could not open `%s`', filePath, err);
+        return process.exit(1);
+      }
+
+      try {
+        conf = JSON5.parse(conf);
+      } catch (err) {
+        console.error('Invalid json content inside `%s`', filePath, err);
+        return process.exit(1);
+      }
+
+      if (_.isArray(conf.extends)) {
+        conf = _.reduce(conf.extends, function(res, filePath) {
+          return _.defaultsDeep(res, loadCheckbuildConf(filePath));
+        }, conf);
+      }
+
+      return conf;
     }
   };
 };
