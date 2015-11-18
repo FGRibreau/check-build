@@ -72,6 +72,11 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 
 ```javascript
 {
+  // Extends the current checkbuild file with others (optionnal)
+  "extends": ["./.checkbuildrc_base"],
+  // Download some distant files and save them into check-build command current directory
+  // Usefull when used with extends (optionnal)
+  "urls": ["https://raw.githubusercontent.com/FGRibreau/javascript/master/.checkbuildrc_base"],
   "checkbuild": {
     "enable": ["jshint", "eslint", "jscs", "jsinspect", "plato", "nsp", "david", "plato"],
     // don't exit immediately if one of the tools reports an error (default true)
@@ -168,6 +173,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 }
 
 ```
+*Note: the `url` attribute presented for eslint is available for each extension*
 
 <p align="center">
 <img style="width:100%" src="./docs/building-house.gif"/>

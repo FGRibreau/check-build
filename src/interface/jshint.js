@@ -10,31 +10,23 @@ module.exports = function (debug) {
   return function (options, f) {
     options = options || {};
 
-    utils.downloadDistantOrLoad(options.url, onConfigLoaded);
+    options.config = jshintcli.loadConfig(p.resolve(process.cwd(), './.jshintrc'));
+    options.args = grunt.file.expand(options.args);
 
-    function onConfigLoaded(err) {
-      if (err) {
-        return f(err);
-      }
+    options.reporter = function (results, data, options) {
+      // @todo implement fixmyfs
+      // if (checkBuildOptions.checkbuild.enable.indexOf('fixmyjs') !== -1) {
+      //   results.forEach(function (file) {
+      //     console.log(fixmyjs.fix(shjs.cat(file.file), {}));
+      //   });
+      // }
 
-      options.config = jshintcli.loadConfig(p.resolve(process.cwd(), './.jshintrc'));
-      options.args = grunt.file.expand(options.args);
+      // use jshint-stylish by default
+      var stylish = require('jshint-stylish').reporter(results, data, options);
+      return stylish;
+    };
 
-      options.reporter = function (results, data, options) {
-        // @todo implement fixmyfs
-        // if (checkBuildOptions.checkbuild.enable.indexOf('fixmyjs') !== -1) {
-        //   results.forEach(function (file) {
-        //     console.log(fixmyjs.fix(shjs.cat(file.file), {}));
-        //   });
-        // }
-
-        // use jshint-stylish by default
-        var stylish = require('jshint-stylish').reporter(results, data, options);
-        return stylish;
-      };
-
-      var hadErrors = !jshintcli.run(options);
-      f(hadErrors);
-    }
+    var hadErrors = !jshintcli.run(options);
+    f(hadErrors);
   };
 };
