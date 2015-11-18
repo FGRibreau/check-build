@@ -1,5 +1,16 @@
 ## Change Log
 
+### v2.5.0 (2015/11/18 18:08 +00:00)
+- [dd29aa3](https://github.com/FGRibreau/check-build/commit/dd29aa3f6b7baa52b81a60262e039efe7dfd559f) Release v2.5.0. (@FGRibreau)
+- [#54](https://github.com/FGRibreau/check-build/pull/54) Merge pull request #54 from jcare44/extendsCheckbuildConf (@jcare44)
+- [02eaf1a](https://github.com/FGRibreau/check-build/commit/02eaf1afc52d9a0f4d13d7d00299c39725c7f2f6) docs(README) (@jcare44)
+- [c788e97](https://github.com/FGRibreau/check-build/commit/c788e97569a20d0731782a1529abc5d4238263fb) Refactored jscs distant file part (@jcare44)
+- [3fe63bb](https://github.com/FGRibreau/check-build/commit/3fe63bb0a49a0adc070205bbd9c3819503cb59f4) Refacto : centralize downloadDistantOrLoad calls before module execution (@jcare44)
+- [c5a6445](https://github.com/FGRibreau/check-build/commit/c5a644516f25fd28e50ef2868d2006b1e12826b3) fetch distant files (@jcare44)
+- [fc6d15a](https://github.com/FGRibreau/check-build/commit/fc6d15ad7d335fae84ece67ea662695dd8933e9a) Add extends to checkbuild files (@jcare44)
+- [c9e26e5](https://github.com/FGRibreau/check-build/commit/c9e26e55a2bb19cb9bad9f3c5a3716e324eb9693) docs(changelog) (@FGRibreau)
+- [286e9bd](https://github.com/FGRibreau/check-build/commit/286e9bd5e3bc171c28d666874cf2407917b0cbb5) feat(github-changes) (@FGRibreau)
+
 ### v2.4.0 (2015/11/16 15:16 +00:00)
 - [24f6474](https://github.com/FGRibreau/check-build/commit/24f6474a687d5b65fe0603628e7d2080ee74a0af) Release v2.4.0. (@FGRibreau)
 - [7aea3b6](https://github.com/FGRibreau/check-build/commit/7aea3b607fe86e76908351a90767700aa247467c) fix(package): added changelog (@FGRibreau)
@@ -44,8 +55,8 @@
 - [3504965](https://github.com/FGRibreau/check-build/commit/35049653a46c051d2582659550fa52c4e5a4805e) remove helper (@julien-leroy)
 - [6181545](https://github.com/FGRibreau/check-build/commit/61815455d94cc47c5e2ca494fd827e336ab55989) It works + cleaner code + remove helpers (@julien-leroy)
 - [e47d69a](https://github.com/FGRibreau/check-build/commit/e47d69aec3611bd1ca4a8981a9e599d774c30989) remove plato help doc and clean plato interface (@julien-leroy)
-- [c133696](https://github.com/FGRibreau/check-build/commit/c133696532b18fc338202b8f1b809b897c0d38f5) add plato and create palto interface. ready to test (@julien-leroy)
 - [f4a11a4](https://github.com/FGRibreau/check-build/commit/f4a11a4e1f0246265158775a46803ee947466756) add json plato response exemple to docs (@julien-leroy)
+- [c133696](https://github.com/FGRibreau/check-build/commit/c133696532b18fc338202b8f1b809b897c0d38f5) add plato and create palto interface. ready to test (@julien-leroy)
 - [#42](https://github.com/FGRibreau/check-build/pull/42) Merge pull request #42 from valeriansaliou/master (@valeriansaliou)
 - [357119b](https://github.com/FGRibreau/check-build/commit/357119b3ac2f1dada91e9e83d3215f185d2d2565) Plato working with latest check-build as of today (@valeriansaliou)
 - [cf04943](https://github.com/FGRibreau/check-build/commit/cf049436ecccf1e4dda3ec9087c099977b4c16de) david defaults (@valeriansaliou)
