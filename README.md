@@ -54,6 +54,8 @@ echo $?
 
 - [Nsp](https://github.com/nodesecurity/nsp) Check your project dependencies for security issues.
 
+*Note: check-build uses a temporary fork of nsp adding a `--subdeb-warn-only` argument, [see why here](https://github.com/nodesecurity/nsp/pull/58)*
+
 <p align="center">
 <img src="./docs/mindblown2.gif"/>
 </p>

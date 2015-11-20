@@ -20,12 +20,15 @@ module.exports = function (debug) {
     process.exit(1);
   }
 
-  debug('using %s', checkbuildFile);
+  debug('using root %s', checkbuildFile);
 
   utils.loadCheckbuildConf(checkbuildFile, function(err, checkbuildOptions) {
     if (err) {
       console.error.apply(this, err);
+      return process.exit(1);
     }
+
+    debug('using conf %s', JSON.stringify(checkbuildOptions, null, 2));
 
     checkBuild(checkbuildOptions, function (errors) {
       if (errors > 0 && !checkbuildOptions.checkbuild.allowFailures) {
