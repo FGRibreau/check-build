@@ -54,6 +54,8 @@ echo $?
 
 - [Nsp](https://github.com/nodesecurity/nsp) Check your project dependencies for security issues.
 
+*Note: the nsp version used is a fork adding a `--subdeb-warn-only` argument*
+
 <p align="center">
 <img src="./docs/mindblown2.gif"/>
 </p>
