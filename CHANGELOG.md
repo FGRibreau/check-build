@@ -1,5 +1,16 @@
 ## Change Log
 
+### v2.6.0 (2015/11/20 09:06 +00:00)
+- [6265070](https://github.com/FGRibreau/check-build/commit/62650701901725ce4aaf8c93c7870b35687267ae) Release v2.6.0. (@FGRibreau)
+- [eb9bb03](https://github.com/FGRibreau/check-build/commit/eb9bb03322fd3bf65466b6cce2ed9dd7017d3073) Merge branch 'master' of github.com:FGRibreau/check-build (@FGRibreau)
+- [817b845](https://github.com/FGRibreau/check-build/commit/817b845eba5a0ac7c3238efe13fa57f7fd75beb8) refactor(changelog): removed script (@FGRibreau)
+- [9ca5960](https://github.com/FGRibreau/check-build/commit/9ca5960f63f7c1676035e79c8819b41458cf1b65) docs(readme): we are now more explicit about nsp fork (@FGRibreau)
+- [#55](https://github.com/FGRibreau/check-build/pull/55) Merge pull request #55 from jcare44/useNspFork (@jcare44)
+- [f646a29](https://github.com/FGRibreau/check-build/commit/f646a29ca1c792a0f4ebad7cbd14f5a3325d186e) docs(README): info about nsp fork (@jcare44)
+- [b6f7c11](https://github.com/FGRibreau/check-build/commit/b6f7c1155f29fb9cf419592a1cbb505cda75d345) fix(urls): fix new key "urls" DL (@jcare44)
+- [b898519](https://github.com/FGRibreau/check-build/commit/b898519201fb1c495e5fbde7b1c9f9993b3623ee) Use forked nsp version with --subdeb-warn-only (@jcare44)
+- [446ef69](https://github.com/FGRibreau/check-build/commit/446ef69e510c1bc45f0985c57874bac6d3b93c40) docs(changelog) (@FGRibreau)
+
 ### v2.5.0 (2015/11/18 18:08 +00:00)
 - [dd29aa3](https://github.com/FGRibreau/check-build/commit/dd29aa3f6b7baa52b81a60262e039efe7dfd559f) Release v2.5.0. (@FGRibreau)
 - [#54](https://github.com/FGRibreau/check-build/pull/54) Merge pull request #54 from jcare44/extendsCheckbuildConf (@jcare44)
@@ -55,8 +66,8 @@
 - [3504965](https://github.com/FGRibreau/check-build/commit/35049653a46c051d2582659550fa52c4e5a4805e) remove helper (@julien-leroy)
 - [6181545](https://github.com/FGRibreau/check-build/commit/61815455d94cc47c5e2ca494fd827e336ab55989) It works + cleaner code + remove helpers (@julien-leroy)
 - [e47d69a](https://github.com/FGRibreau/check-build/commit/e47d69aec3611bd1ca4a8981a9e599d774c30989) remove plato help doc and clean plato interface (@julien-leroy)
-- [f4a11a4](https://github.com/FGRibreau/check-build/commit/f4a11a4e1f0246265158775a46803ee947466756) add json plato response exemple to docs (@julien-leroy)
 - [c133696](https://github.com/FGRibreau/check-build/commit/c133696532b18fc338202b8f1b809b897c0d38f5) add plato and create palto interface. ready to test (@julien-leroy)
+- [f4a11a4](https://github.com/FGRibreau/check-build/commit/f4a11a4e1f0246265158775a46803ee947466756) add json plato response exemple to docs (@julien-leroy)
 - [#42](https://github.com/FGRibreau/check-build/pull/42) Merge pull request #42 from valeriansaliou/master (@valeriansaliou)
 - [357119b](https://github.com/FGRibreau/check-build/commit/357119b3ac2f1dada91e9e83d3215f185d2d2565) Plato working with latest check-build as of today (@valeriansaliou)
 - [cf04943](https://github.com/FGRibreau/check-build/commit/cf049436ecccf1e4dda3ec9087c099977b4c16de) david defaults (@valeriansaliou)
@@ -143,8 +154,8 @@
 - [0da580a](https://github.com/FGRibreau/check-build/commit/0da580a22a2cbe333e73c0a81c735ac2f785cb70) 1.3.0 (@FGRibreau)
 - [#12](https://github.com/FGRibreau/check-build/pull/12) Merge pull request #12 from seegno/enhancement/fix-jscs-integration (@seegno)
 - [#11](https://github.com/FGRibreau/check-build/pull/11) Merge pull request #11 from seegno/enhancement/pass-options-to-david (@seegno)
-- [9af5259](https://github.com/FGRibreau/check-build/commit/9af525970ef3684391a9c99997a6df852b2ca659) Improve message output readability (@ruimarinho)
 - [e46ed04](https://github.com/FGRibreau/check-build/commit/e46ed04a3c82ca74633c9d2417dc71157c946b09) Fix integration with jscs (@ruimarinho)
+- [9af5259](https://github.com/FGRibreau/check-build/commit/9af525970ef3684391a9c99997a6df852b2ca659) Improve message output readability (@ruimarinho)
 - [2758575](https://github.com/FGRibreau/check-build/commit/2758575d42ef52cf1256f68619abbacf1e1bf0a6) Add options configuration to david (@ruimarinho)
 
 ### v1.2.0 (2014/11/15 13:16 +00:00)
