@@ -1,3 +1,4 @@
+[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build) [![Version](http://badge.fury.io/js/check-build.png)](http://badge.fury.io/js/check-build) [![Downloads](http://img.shields.io/npm/dm/check-build.svg)](https://www.npmjs.com/package/check-build)
 
 **Check-build** - Verify that your NodeJS project follow team conventions, is well written, up to date and *secure*.
 
@@ -184,3 +185,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
 # Final goal
 
 A (NodeJS) project can be automatically analyzed in many dimension like code-consistency, d-r-y-ness and security. Check-build's final goal is to take the human out of the loop.
+
+## Donate
+
+I maintain this project in my free time, if it helped you please support my work [via paypal](paypal.me/fgribreau), thanks a lot!
