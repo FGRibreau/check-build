@@ -1,5 +1,7 @@
 [![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build) [![Version](http://badge.fury.io/js/check-build.png)](http://badge.fury.io/js/check-build) [![Downloads](http://img.shields.io/npm/dm/check-build.svg)](https://www.npmjs.com/package/check-build)
 
+![NPM](https://nodei.co/npm/check-build.png?downloadRank=true) ![NPM](https://nodei.co/npm-dl/check-build.png?months=3&height=2)
+
 **Check-build** - Verify that your NodeJS project follow team conventions, is well written, up to date and *secure*.
 
 
