@@ -16,18 +16,11 @@ module.exports = function (debug) {
     var NODE_MODULES = p.resolve(__dirname, '../../', 'node_modules/');
     var eslint = p.resolve(NODE_MODULES, '.bin/eslint');
 
-    var cmd = [eslint].concat(args).join(' ');
-
-    debug('running eslint with %s', cmd);
+    debug('running eslint with %s', [eslint].concat(args).join(' '));
 
     ['node', 'check-build'].concat();
 
-    exec(cmd, function (error, stdout, stderr) {
-      console.log(stdout);
-
-      if (stderr) {
-        console.error(stderr);
-      }
+    utils.exec(eslint, args, function (error) {
 
       var hadError = error && error.code !== 0;
 
