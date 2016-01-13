@@ -8,6 +8,7 @@ var _ = require('lodash');
 var async = require('async');
 var shjs = require('shelljs');
 var JSON5 = require('json5');
+var spawn = require('child_process').spawn;
 
 module.exports = function (debug) {
 
@@ -90,8 +91,13 @@ module.exports = function (debug) {
     }
   }
 
+  function exec(cmd, args, f){
+    spawn(cmd, args, {stdio:'inherit'}).on('exit', f);
+  }
+
   return {
     downloadDistantOrLoad: downloadDistantOrLoad,
-    loadCheckbuildConf: loadCheckbuildConf
+    loadCheckbuildConf: loadCheckbuildConf,
+    exec: exec
   };
 };
