@@ -1,5 +1,15 @@
 ## Change Log
 
+### v2.7.0 (2016/01/13 12:43 +00:00)
+- [59463f6](https://github.com/FGRibreau/check-build/commit/59463f6287ef1c18ace9cb7659d2bfa6c9ea9ed8) Release v2.7.0. (@FGRibreau)
+- [774bd80](https://github.com/FGRibreau/check-build/commit/774bd802f28f8ec5522b21a68c9462cb403b3249) fix(package) (@FGRibreau)
+- [#59](https://github.com/FGRibreau/check-build/pull/59) Merge pull request #59 from mywaystar/master (@mywaystar)
+- [00d2035](https://github.com/FGRibreau/check-build/commit/00d2035bb03d203aa5081cf7cbc3799a619a67e3) colors on eslint (@mywaystar)
+- [ad9ea31](https://github.com/FGRibreau/check-build/commit/ad9ea318f19aafa3f1661f08d7703b9e33b8f86a) Update README.md (@FGRibreau)
+- [c910ba0](https://github.com/FGRibreau/check-build/commit/c910ba0805a89f1a0fa3c3a243cbd9c2001b0b2b) docs(readme) (@FGRibreau)
+- [c4312f6](https://github.com/FGRibreau/check-build/commit/c4312f6fe3fa859435a507b723b9deb91a1f8062) Update README.md (@FGRibreau)
+- [82cb978](https://github.com/FGRibreau/check-build/commit/82cb978151681ee817a0e761fd672d3a13039097) docs(changelog): updated (@FGRibreau)
+
 ### v2.6.0 (2015/11/20 09:06 +00:00)
 - [6265070](https://github.com/FGRibreau/check-build/commit/62650701901725ce4aaf8c93c7870b35687267ae) Release v2.6.0. (@FGRibreau)
 - [eb9bb03](https://github.com/FGRibreau/check-build/commit/eb9bb03322fd3bf65466b6cce2ed9dd7017d3073) Merge branch 'master' of github.com:FGRibreau/check-build (@FGRibreau)
@@ -135,8 +145,8 @@
 - [9220e26](https://github.com/FGRibreau/check-build/commit/9220e26163e17c462bf4aeae8c0409c6cb4a34f3) Release v1.3.2. (@FGRibreau)
 - [ddb2adc](https://github.com/FGRibreau/check-build/commit/ddb2adc6cd89a56a8e007ce84fc117efbb763693) chore(readme): fix david integration (@FGRibreau)
 - [b0bc25b](https://github.com/FGRibreau/check-build/commit/b0bc25bc942ac1dca0866a63d4b01a1061350d11) fix(david): skip warnings (@FGRibreau)
-- [5c48da5](https://github.com/FGRibreau/check-build/commit/5c48da58edf5f01c0b100fc2a653d43d5ff5e2b3) Release v1.3.1. (@FGRibreau)
 - [da95ff6](https://github.com/FGRibreau/check-build/commit/da95ff60775751b878aacb2f291b4352e1f55dfb) chore(history) (@FGRibreau)
+- [5c48da5](https://github.com/FGRibreau/check-build/commit/5c48da58edf5f01c0b100fc2a653d43d5ff5e2b3) Release v1.3.1. (@FGRibreau)
 
 ### v1.3.1 (2015/01/21 14:53 +00:00)
 - [d63a73c](https://github.com/FGRibreau/check-build/commit/d63a73ce9cd2a7e20f7d685062580acbf6487203) chore(history) (@FGRibreau)
@@ -154,8 +164,8 @@
 - [0da580a](https://github.com/FGRibreau/check-build/commit/0da580a22a2cbe333e73c0a81c735ac2f785cb70) 1.3.0 (@FGRibreau)
 - [#12](https://github.com/FGRibreau/check-build/pull/12) Merge pull request #12 from seegno/enhancement/fix-jscs-integration (@seegno)
 - [#11](https://github.com/FGRibreau/check-build/pull/11) Merge pull request #11 from seegno/enhancement/pass-options-to-david (@seegno)
-- [e46ed04](https://github.com/FGRibreau/check-build/commit/e46ed04a3c82ca74633c9d2417dc71157c946b09) Fix integration with jscs (@ruimarinho)
 - [9af5259](https://github.com/FGRibreau/check-build/commit/9af525970ef3684391a9c99997a6df852b2ca659) Improve message output readability (@ruimarinho)
+- [e46ed04](https://github.com/FGRibreau/check-build/commit/e46ed04a3c82ca74633c9d2417dc71157c946b09) Fix integration with jscs (@ruimarinho)
 - [2758575](https://github.com/FGRibreau/check-build/commit/2758575d42ef52cf1256f68619abbacf1e1bf0a6) Add options configuration to david (@ruimarinho)
 
 ### v1.2.0 (2014/11/15 13:16 +00:00)
