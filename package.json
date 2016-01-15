@@ -38,7 +38,7 @@
     "jsxhint": "^0.15.1",
     "lodash": "^3.0.1",
     "node-filepaths": "0.x.x",
-    "nsp": "git+https://github.com/jcare44/nsp.git#master",
+    "nsp-jcare": "2.0.2",
     "plato": "^1.5.0",
     "requestretry": "^1.2.2",
     "shelljs": "0.x.x",
