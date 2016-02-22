@@ -69,7 +69,20 @@ module.exports = function (debug) {
       if (_.isArray(conf.extends)) {
         async.reduce(conf.extends, conf, function(res, filePath, cb) {
           loadCheckbuildConf(filePath, function(err, conf) {
-            cb(err, _.defaultsDeep(res, conf));
+            /**
+             * Do almost like _.defaultsDeep, but without merging arrays
+             */
+            function defaultsDeep(config, defaults) {
+              if (_.isPlainObject(config)) {
+                return _.mapValues(_.defaults(config, defaults), function(val, index) {
+                  return defaultsDeep(_.get(config, index), _.get(defaults, index));
+                });
+              }
+
+              return config || defaults;
+            }
+
+            cb(err, defaultsDeep(res, conf));
           });
         }, f);
       } else {
