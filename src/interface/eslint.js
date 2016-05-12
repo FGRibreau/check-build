@@ -3,6 +3,7 @@
 var p = require('path');
 var grunt = require('grunt');
 var exec = require('child_process').exec;
+var resolve = require('snyk-resolve');
 
 module.exports = function (debug) {
   var utils = require('./_utils')(debug);
@@ -13,8 +14,7 @@ module.exports = function (debug) {
     var config = p.resolve(process.cwd(), './.eslintrc');
     var files = grunt.file.expand(options.args);
     var args = ['--config', config].concat(files);
-    var NODE_MODULES = p.resolve(__dirname, '../../', 'node_modules/');
-    var eslint = p.resolve(NODE_MODULES, '.bin/eslint');
+    var eslint = require.resolve('eslint/bin/eslint');
 
     debug('running eslint with %s', [eslint].concat(args).join(' '));
 

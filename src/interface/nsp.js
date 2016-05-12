@@ -6,7 +6,8 @@ var p = require('path');
 module.exports = function (debug) {
 
   return function (options, f) {
-    var cmd = ['node', p.resolve(__dirname, '../../node_modules/nsp-jcare/bin/nsp'), 'check'];
+    var nsp = require.resolve('nsp-jcare/bin/nsp');
+    var cmd = ['node', nsp, 'check'];
     cmd = cmd.concat(options.args || []).join(' ');
 
     debug('running %s', cmd);
