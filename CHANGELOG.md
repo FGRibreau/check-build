@@ -1,5 +1,25 @@
 ## Change Log
 
+### v2.8.0 (2016/05/12 14:38 +00:00)
+- [d30b59d](https://github.com/FGRibreau/check-build/commit/d30b59dc1a4b3db8fb07ab5f4012cdf4258610eb) Release v2.8.0. (@FGRibreau)
+- [#61](https://github.com/FGRibreau/check-build/pull/61) Merge pull request #61 from pjerem/jscsUpdate (@pjerem)
+- [90c86eb](https://github.com/FGRibreau/check-build/commit/90c86ebc717603dfa736949bab1720ce6a3387d2) Updating JSCS version to 3.x.x
+- [aa1f6a5](https://github.com/FGRibreau/check-build/commit/aa1f6a52f59102e24cf93a6c0527d05a4b854c04) Update README.md (@FGRibreau)
+
+### v2.7.3 (2016/02/29 08:44 +00:00)
+- [c0a9920](https://github.com/FGRibreau/check-build/commit/c0a99201d78e466805df2a5e49f53970246c7fc2) Release v2.7.3. (@FGRibreau)
+- [#60](https://github.com/FGRibreau/check-build/pull/60) Merge pull request #60 from jcare44/fixConfigMerging (@jcare44)
+- [4dedcfd](https://github.com/FGRibreau/check-build/commit/4dedcfd341fa43de862c8c88bb7c842a268245a2) fix(extendConf): arrays in conf aren't merged any more (@jcare44)
+
+### v2.7.2 (2016/01/15 14:45 +00:00)
+- [a86a6c7](https://github.com/FGRibreau/check-build/commit/a86a6c73955346babdfd4867942532e838db88c5) Release v2.7.2. (@FGRibreau)
+- [a71604e](https://github.com/FGRibreau/check-build/commit/a71604ed39e4b8e3d48bad960aad92786d3ff488) fix(nsp): use our fork (@FGRibreau)
+
+### v2.7.1 (2016/01/14 10:59 +00:00)
+- [df1f328](https://github.com/FGRibreau/check-build/commit/df1f328a51bc4e0b51b2d2b2f052594414155514) Release v2.7.1. (@FGRibreau)
+- [5fe5258](https://github.com/FGRibreau/check-build/commit/5fe52588f1a4c7cf88897eb56e6f507aeb8ba50d) fix(package): adding git+https as dep (@FGRibreau)
+- [ae9ab54](https://github.com/FGRibreau/check-build/commit/ae9ab54d6fbf0dad0cf3ba38de0bacc3d4106de4) docs(changelog): updated (@FGRibreau)
+
 ### v2.7.0 (2016/01/13 12:43 +00:00)
 - [59463f6](https://github.com/FGRibreau/check-build/commit/59463f6287ef1c18ace9cb7659d2bfa6c9ea9ed8) Release v2.7.0. (@FGRibreau)
 - [774bd80](https://github.com/FGRibreau/check-build/commit/774bd802f28f8ec5522b21a68c9462cb403b3249) fix(package) (@FGRibreau)
@@ -76,8 +96,8 @@
 - [3504965](https://github.com/FGRibreau/check-build/commit/35049653a46c051d2582659550fa52c4e5a4805e) remove helper (@julien-leroy)
 - [6181545](https://github.com/FGRibreau/check-build/commit/61815455d94cc47c5e2ca494fd827e336ab55989) It works + cleaner code + remove helpers (@julien-leroy)
 - [e47d69a](https://github.com/FGRibreau/check-build/commit/e47d69aec3611bd1ca4a8981a9e599d774c30989) remove plato help doc and clean plato interface (@julien-leroy)
-- [c133696](https://github.com/FGRibreau/check-build/commit/c133696532b18fc338202b8f1b809b897c0d38f5) add plato and create palto interface. ready to test (@julien-leroy)
 - [f4a11a4](https://github.com/FGRibreau/check-build/commit/f4a11a4e1f0246265158775a46803ee947466756) add json plato response exemple to docs (@julien-leroy)
+- [c133696](https://github.com/FGRibreau/check-build/commit/c133696532b18fc338202b8f1b809b897c0d38f5) add plato and create palto interface. ready to test (@julien-leroy)
 - [#42](https://github.com/FGRibreau/check-build/pull/42) Merge pull request #42 from valeriansaliou/master (@valeriansaliou)
 - [357119b](https://github.com/FGRibreau/check-build/commit/357119b3ac2f1dada91e9e83d3215f185d2d2565) Plato working with latest check-build as of today (@valeriansaliou)
 - [cf04943](https://github.com/FGRibreau/check-build/commit/cf049436ecccf1e4dda3ec9087c099977b4c16de) david defaults (@valeriansaliou)
@@ -145,8 +165,8 @@
 - [9220e26](https://github.com/FGRibreau/check-build/commit/9220e26163e17c462bf4aeae8c0409c6cb4a34f3) Release v1.3.2. (@FGRibreau)
 - [ddb2adc](https://github.com/FGRibreau/check-build/commit/ddb2adc6cd89a56a8e007ce84fc117efbb763693) chore(readme): fix david integration (@FGRibreau)
 - [b0bc25b](https://github.com/FGRibreau/check-build/commit/b0bc25bc942ac1dca0866a63d4b01a1061350d11) fix(david): skip warnings (@FGRibreau)
-- [da95ff6](https://github.com/FGRibreau/check-build/commit/da95ff60775751b878aacb2f291b4352e1f55dfb) chore(history) (@FGRibreau)
 - [5c48da5](https://github.com/FGRibreau/check-build/commit/5c48da58edf5f01c0b100fc2a653d43d5ff5e2b3) Release v1.3.1. (@FGRibreau)
+- [da95ff6](https://github.com/FGRibreau/check-build/commit/da95ff60775751b878aacb2f291b4352e1f55dfb) chore(history) (@FGRibreau)
 
 ### v1.3.1 (2015/01/21 14:53 +00:00)
 - [d63a73c](https://github.com/FGRibreau/check-build/commit/d63a73ce9cd2a7e20f7d685062580acbf6487203) chore(history) (@FGRibreau)
