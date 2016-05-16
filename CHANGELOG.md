@@ -1,5 +1,15 @@
 ## Change Log
 
+### v2.8.2 (2016/05/16 09:15 +00:00)
+- [bac9a82](https://github.com/FGRibreau/check-build/commit/bac9a82f35489e18a07499cb3825a2912671c548) Release v2.8.2. (@FGRibreau)
+- [#62](https://github.com/FGRibreau/check-build/pull/62) Merge pull request #62 from YvesPasteur/patch-1 (@YvesPasteur)
+- [46c2111](https://github.com/FGRibreau/check-build/commit/46c21111d00153d97bcbce1c737880231a524cfc) Add unresolved dependency (@YvesPasteur)
+
+### v2.8.1 (2016/05/12 15:35 +00:00)
+- [1db1694](https://github.com/FGRibreau/check-build/commit/1db1694562b0693d49f76a2efb64e1797d87e8e9) Release v2.8.1. (@FGRibreau)
+- [a06b67c](https://github.com/FGRibreau/check-build/commit/a06b67cb6a9fdd8f933b4ff9e1b3c0c161aad161) fix(checkbuild) (@FGRibreau)
+- [5895e51](https://github.com/FGRibreau/check-build/commit/5895e519954f3eb4e318dfc6592ea6672c507ce4) docs(changelog): updated (@FGRibreau)
+
 ### v2.8.0 (2016/05/12 14:38 +00:00)
 - [d30b59d](https://github.com/FGRibreau/check-build/commit/d30b59dc1a4b3db8fb07ab5f4012cdf4258610eb) Release v2.8.0. (@FGRibreau)
 - [#61](https://github.com/FGRibreau/check-build/pull/61) Merge pull request #61 from pjerem/jscsUpdate (@pjerem)
