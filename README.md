@@ -83,7 +83,7 @@ Put a `.checkbuild` file ([example](./defaults/.checkbuild)) in your project roo
   // Usefull when used with extends (optionnal)
   "urls": ["https://raw.githubusercontent.com/FGRibreau/javascript/master/.checkbuildrc_base"],
   "checkbuild": {
-    "enable": ["jshint", "eslint", "jscs", "jsinspect", "plato", "nsp", "david", "plato"],
+    "enable": ["jshint", "eslint", "jscs", "jsinspect", "plato", "nsp", "david"],
     // don't exit immediately if one of the tools reports an error (default true)
     "continueOnError": true,
     // don't exit(1) even if we had some failures (default false)
