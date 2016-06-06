@@ -6,8 +6,11 @@
     "check-build": "bin/check-build"
   },
   "scripts": {
-    "changelog": "github-changes --o $(node -p 'process.env.npm_package_repository_url.split(\"/\")[3];') --r $(node -p 'a=process.env.npm_package_repository_url.split(\"/\");a[a.length-1].split(\".\")[0]') --token $CHANGELOG_GITHUB_TOKEN_FG -f CHANGELOG.md",
-    "changelog-git": "npm run changelog && git add CHANGELOG.md && git commit -m 'docs(changelog): updated' && git push origin master"
+    "changelog-init": "conventional-changelog -i CHANGELOG.md -s -r 0",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s",
+    "changelog-git": "npm run changelog && git add CHANGELOG.md && git commit -m 'docs(changelog): updated' && git push origin master",
+    "publish-please": "publish-please",
+    "prepublish": "publish-please guard"
   },
   "main": "./src",
   "repository": {
@@ -46,6 +49,7 @@
     "strip-json-comments": "^1.0.2"
   },
   "devDependencies": {
-    "github-changes": "^1.0.0"
+    "conventional-changelog": "^1.1.0",
+    "publish-please": "^2.1.1"
   }
 }
