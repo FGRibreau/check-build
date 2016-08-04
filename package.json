@@ -45,6 +45,7 @@
     "plato": "^1.5.0",
     "requestretry": "^1.2.2",
     "shelljs": "0.x.x",
+    "snyk": "^1.17.5",
     "snyk-resolve": "^1.0.0",
     "strip-json-comments": "^1.0.2"
   },
