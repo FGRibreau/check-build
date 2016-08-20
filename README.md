@@ -1,4 +1,4 @@
-[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build) [![Version](http://badge.fury.io/js/check-build.png)](http://badge.fury.io/js/check-build) [![Downloads](http://img.shields.io/npm/dm/check-build.svg)](https://www.npmjs.com/package/check-build) ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg)
+[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build) [![Version](http://badge.fury.io/js/check-build.png)](http://badge.fury.io/js/check-build) [![Downloads](http://img.shields.io/npm/dm/check-build.svg)](https://www.npmjs.com/package/check-build) ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg) [![Twitter Follow](https://img.shields.io/twitter/follow/fgribreau.svg?style=flat)](https://twitter.com/FGRibreau)
 
 ![NPM](https://nodei.co/npm/check-build.png?downloadRank=true) ![NPM](https://nodei.co/npm-dl/check-build.png?months=3&height=2)
 
