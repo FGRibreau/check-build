@@ -19,9 +19,6 @@
 
 # Usage
 
-[![Deps](https://david-dm.org/FGRibreau/check-build.png)](https://david-dm.org/FGRibreau/check-build)
-[![Version](http://badge.fury.io/js/check-build.png)](https://david-dm.org/FGRibreau/check-build) [![Downloads](http://img.shields.io/npm/dm/check-build.svg)](https://www.npmjs.com/package/check-build)
-
 ```shell
 npm install check-build -g
 cd /path/to/your/project
