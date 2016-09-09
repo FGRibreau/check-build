@@ -29,7 +29,7 @@
     "buddy.js": "0.x.x",
     "david": "^6.1.2",
     "debug": "^2.2.0",
-    "eslint": "^1.1.0",
+    "eslint": "^3.5.0",
     "eslint-plugin-react": "^3.2.3",
     "fixmyjs": "^1.0.2",
     "grunt": "^0.4.5",
