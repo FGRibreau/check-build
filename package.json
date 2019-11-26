@@ -27,7 +27,7 @@
     "async": "1.x.x",
     "bluebird": "^2.3.11",
     "buddy.js": "0.x.x",
-    "david": "^6.1.2",
+    "david": "^11.1.0",
     "debug": "^2.2.0",
     "eslint": "^1.1.0",
     "eslint-plugin-react": "^3.2.3",
