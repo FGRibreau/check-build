@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/FGRibreau/check-build",
   "dependencies": {
-    "async": "1.x.x",
+    "async": "3.x.x",
     "bluebird": "^2.3.11",
     "buddy.js": "0.x.x",
     "david": "^6.1.2",
