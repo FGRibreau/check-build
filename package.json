@@ -31,7 +31,7 @@
     "debug": "^2.2.0",
     "eslint": "^1.1.0",
     "eslint-plugin-react": "^3.2.3",
-    "fixmyjs": "^1.0.2",
+    "fixmyjs": "^2.0.0",
     "grunt": "^0.4.5",
     "jscs": "3.x.x",
     "jshint": "^2.5.6",
