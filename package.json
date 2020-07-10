@@ -39,7 +39,7 @@
     "jsinspect": "0.x.x",
     "json5": "^0.4.0",
     "jsxhint": "^0.15.1",
-    "lodash": "^3.0.1",
+    "lodash": "^4.17.15",
     "node-filepaths": "0.x.x",
     "nsp-jcare": "2.0.2",
     "plato": "^1.5.0",
