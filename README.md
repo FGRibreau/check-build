@@ -55,6 +55,7 @@ echo $?
 ### Security
 
 - [Nsp](https://github.com/nodesecurity/nsp) Check your project dependencies for security issues.
+- [Snyk](https://github.com/Snyk/snyk) find & fix known vulnerabilities in npm dependencies
 
 *Note: check-build uses a temporary fork of nsp adding a `--subdeb-warn-only` argument, [see why here](https://github.com/nodesecurity/nsp/pull/58)*
 
